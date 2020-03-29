@@ -1,0 +1,26 @@
+:host {
+  display: block;
+  padding: 15px;
+}
+trav-input {
+  margin-bottom: 20px;
+  &:last-of-type {
+    margin-bottom: 0px;
+  }
+}
+
+.d-flex {
+  display: flex;
+  margin-bottom: 20px;
+  trav-input {
+    flex: 1 0;
+    margin-bottom: 0px;
+    &:first-of-type {
+      margin-right: 20px;
+    }
+  }
+}
+
+ion-button {
+  --background: var(--trav-submit-button-color);
+}

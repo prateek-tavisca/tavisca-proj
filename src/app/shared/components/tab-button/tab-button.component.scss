@@ -1,41 +1,50 @@
 @import "tab-button.vars";
 
 :host {
-  --background: var(--ion-color-primary);
+  --background: transparent;
   --background-checked: var(--ion-color-primary);
-  --background-hover: var(--color-checked);
-  --background-focused: var(--color-checked);
-  --background-activated-opacity: 0;
-  --background-focused-opacity: 0.12;
-  --background-hover-opacity: 0.04;
-  --color: var(--ion-color-primary);
+  --background-hover: transparent;
+
+  --background-checked-opacity: 1;
+  --background-hover-opacity: 0.4;
+
+  --color: var(--ion-color-medium-shade);
+  --color-hover: var(--ion-color-dark-tint);
   --color-checked: var(--ion-color-primary);
+
   --indicator-box-shadow: none;
-  --indicator-color: var(--color-checked);
+  --indicator-color: var(--color);
+  --indicator-activated-color: var(--color-checked);
   --indicator-height: 2px;
-  --indicator-transition: #{$segment-button-transition-animated};
+  --indicator-transition: #{$tab-button-transition-animated};
   --indicator-transform: none;
-  --transition: $segment-button-transition;
 
-  min-width: $segment-button-min-width;
+  --transition: $tab-button-transition;
 
-  max-width: $segment-button-max-width;
-  min-height: $segment-button-min-height;
+  min-width: $tab-button-min-width;
+
+  max-width: $tab-button-max-width;
+  min-height: $tab-button-min-height;
 
   border-width: var(--border-width);
   border-style: var(--border-style);
   border-color: var(--border-color);
 
-  font-size: $segment-button-font-size;
-  font-weight: $segment-button-font-weight;
+  font-size: $tab-button-font-size;
+  font-weight: $tab-button-font-weight;
 
-  letter-spacing: $segment-button-letter-spacing;
+  letter-spacing: $tab-button-letter-spacing;
 
-  line-height: $segment-button-line-height;
+  line-height: $tab-button-line-height;
 
   text-transform: uppercase;
   display: flex;
   position: relative;
+  margin-right: 5px;
+}
+
+:host(:last-of-type) {
+  margin-right: 0px;
 }
 .button-native {
   display: flex;
@@ -60,36 +69,36 @@
 
   outline: none;
 
-  background: transparent;
+  background: var(--background);
 
   contain: content;
 
   overflow: hidden;
 
   z-index: 2;
+  color: var(--color);
 }
 
-.segment-button-indicator {
+.button-native:hover {
+  background: var(--background-hover);
+  color: var(--color-hover);
+  opacity: var(--background-hover-opacity);
+}
+.button-inner {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 16px;
+  > * {
+    vertical-align: text-top;
+  }
+}
+
+.tab-button-indicator {
   transform-origin: left;
 
   position: absolute;
-
-  opacity: 0;
-
-  box-sizing: border-box;
-
-  will-change: transform, opacity;
-
-  pointer-events: none;
-  bottom: 0;
-}
-
-.segment-button-indicator {
-  transform-origin: left;
-
-  position: absolute;
-
-  opacity: 0;
 
   box-sizing: border-box;
 
@@ -97,9 +106,10 @@
 
   pointer-events: none;
   width: 100%;
+  bottom: 0;
 }
 
-.segment-button-indicator-background {
+.tab-button-indicator-background {
   width: 100%;
   height: var(--indicator-height);
 
@@ -110,41 +120,37 @@
   pointer-events: none;
 }
 
-.segment-button-indicator-animated {
+.tab-button-indicator-animated {
   transition: var(--indicator-transition);
 }
 
-:host(.segment-button-checked) .segment-button-indicator {
-  opacity: 1;
+:host(.tab-button-checked) .tab-button-indicator-background {
+  background: var(--indicator-activated-color);
 }
 
-.segment-button-indicator-background {
+.tab-button-indicator-background {
   background: var(--indicator-color);
 }
 
-:host(.segment-button-disabled) {
-  opacity: $segment-button-opacity-disabled;
-}
-
-// Segment Button: Checked
+// tab Button: Checked
 // --------------------------------------------------
 
-:host(.segment-button-checked) {
+:host(.tab-button-checked) {
   background: none;
   .button-native {
     color: var(--color-checked);
-  }
-
-  &::slotted(ion-icon) {
-    color: var(--color-checked);
-    fill: currentColor;
+    opacity: var(--background-checked-opacity);
   }
 }
+:host(.tab-button) ::slotted(ion-icon) {
+  margin-right: 5px;
+}
 
-// Segment Button: Disabled
+// tab Button: Disabled
 // --------------------------------------------------
 
-:host(.segment-button-disabled) {
+:host(.tab-button-disabled) {
+  opacity: $tab-button-opacity-disabled;
   cursor: default;
   pointer-events: none;
 }

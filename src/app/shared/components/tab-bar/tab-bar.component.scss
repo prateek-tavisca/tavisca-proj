@@ -18,7 +18,7 @@
   overflow-x: auto;
 }
 
-:host(.segment-disabled),
-::slotted(.segment-button-disabled) {
+:host(.tab-bar-disabled),
+::slotted(.tab-button-disabled) {
   pointer-events: none;
 }

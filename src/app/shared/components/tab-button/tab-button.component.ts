@@ -5,8 +5,9 @@ import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
   templateUrl: "./tab-button.component.html",
   styleUrls: ["./tab-button.component.scss"],
   host: {
-    "[class.segment-button-disabled]": "disabled",
-    "[class.segment-button-checked]": "checked"
+    class: "tab-button",
+    "[class.tab-button-disabled]": "disabled",
+    "[class.tab-button-checked]": "checked"
   }
 })
 export class TabButtonComponent implements OnInit {

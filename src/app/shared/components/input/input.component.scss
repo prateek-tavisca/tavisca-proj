@@ -1,19 +1,21 @@
+.trav-float-input {
+  display: block;
+}
 .trav-input--container {
   display: flex;
   position: relative;
 }
 .trav-input {
-  flex: 1 1 auto;
   background-color: transparent;
   display: block;
   min-width: 0%;
   outline: none;
   box-sizing: content-box;
-  border-radius: 4px;
+  border-radius: 8px;
   color: #333;
   font-size: 16px;
   height: 28px;
-
+  width: 100%;
   padding: 13px 15px;
   z-index: 1;
   border: 1px solid #333;
@@ -30,7 +32,7 @@
   position: absolute;
   bottom: 3px;
   background: #fff;
-  bottom: 17px;
+  bottom: 18px;
   box-sizing: border-box;
   left: 8px;
   overflow: hidden;

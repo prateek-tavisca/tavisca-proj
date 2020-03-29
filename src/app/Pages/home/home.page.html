@@ -14,24 +14,28 @@
       name="segment"
     >
       <trav-tab-button class="tab-button" value="flight"
-        ><ion-icon src="/assets/icon/airplane-outline.svg"></ion-icon
+        ><ion-icon
+          class="mr-5"
+          src="/assets/icon/airplane-outline.svg"
+        ></ion-icon
         >Flight</trav-tab-button
       >
       <trav-tab-button value="hotel"
-        ><ion-icon src="/assets/icon/hotel.svg"></ion-icon
+        ><ion-icon class="mr-5" src="/assets/icon/hotel.svg"></ion-icon
         >Hotel</trav-tab-button
       >
       <trav-tab-button value="car"
-        ><ion-icon src="/assets/icon/car-outline.svg"></ion-icon
+        ><ion-icon class="mr-5" src="/assets/icon/car-outline.svg"></ion-icon
         >Car</trav-tab-button
       >
       <trav-tab-button value="activity"
-        ><ion-icon src="/assets/icon/flag-outline.svg"></ion-icon
+        ><ion-icon class="mr-5" src="/assets/icon/flag-outline.svg"></ion-icon
         >Activity</trav-tab-button
       >
     </trav-tab-bar>
     <div [ngSwitch]="segment">
-      <trav-flights *ngSwitchCase="'flight'"> </trav-flights>
+      <trav-flights class="trav-flights" *ngSwitchCase="'flight'">
+      </trav-flights>
 
       <ion-card *ngSwitchCase="'hotel'">
         <ion-card-header>

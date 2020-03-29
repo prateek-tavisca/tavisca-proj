@@ -1,6 +1,23 @@
-<trav-input label="Departure"></trav-input>
-<trav-input label="Destination"></trav-input>
-<trav-input label="Departure Date"></trav-input>
-<trav-input label="Return Date"></trav-input>
-<trav-input label="Traveler"></trav-input>
-<trav-input label="Class"></trav-input>
+<form [formGroup]="flightForm" (ngSubmit)="onSubmit(flightForm)">
+  <trav-input formControlName="departure" label="Departure"></trav-input>
+  <trav-input formControlName="destination" label="Destination"></trav-input>
+  <div class="d-flex flex-item-center">
+    <trav-input
+      formControlName="departDate"
+      label="Departure Date"
+    ></trav-input>
+    <trav-input formControlName="returnDate" label="Return Date"></trav-input>
+  </div>
+
+  <trav-input formControlName="travelers" label="Traveler"></trav-input>
+  <trav-input formControlName="travelClass" label="Class"></trav-input>
+  <ion-button
+    class="flight-submit"
+    expand="block"
+    [disabled]="flightForm.valid"
+    type="submit"
+    class="btn btn-primary"
+  >
+    Primary
+  </ion-button>
+</form>

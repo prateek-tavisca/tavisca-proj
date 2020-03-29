@@ -10,6 +10,9 @@
     value=""
     autocapitalize="none"
     id="identifierId"
+    (input)="onChangeFn($event)"
+    (change)="onChangeFn($event)"
+    (blur)="onTouched()"
   />
   <label class="trav-input__label" aria-hidden="true">{{ label }}</label>
 </div>
