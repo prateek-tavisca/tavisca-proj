@@ -1,0 +1,22 @@
+<button
+  type="button"
+  class="button-native tab-button"
+  [disabled]="disabled"
+  (click)="onTabSelected($event)"
+>
+  <span class="button-inner">
+    <ng-content></ng-content>
+  </span>
+</button>
+<div
+  part="indicator"
+  [ngClass]="{
+    'segment-button-indicator': true,
+    'segment-button-indicator-animated': true
+  }"
+>
+  <div
+    part="indicator-background"
+    class="segment-button-indicator-background"
+  ></div>
+</div>

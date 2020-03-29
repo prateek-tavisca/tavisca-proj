@@ -1,0 +1,45 @@
+.trav-input--container {
+  display: flex;
+  position: relative;
+}
+.trav-input {
+  flex: 1 1 auto;
+  background-color: transparent;
+  display: block;
+  min-width: 0%;
+  outline: none;
+  box-sizing: content-box;
+  border-radius: 4px;
+  color: #333;
+  font-size: 16px;
+  height: 28px;
+
+  padding: 13px 15px;
+  z-index: 1;
+  border: 1px solid #333;
+
+  &:focus + .trav-input__label {
+    transform: scale(0.75) translateY(-39px);
+  }
+}
+
+.trav-input__label {
+  transition-property: color, bottom, transform;
+  color: #333;
+  pointer-events: none;
+  position: absolute;
+  bottom: 3px;
+  background: #fff;
+  bottom: 17px;
+  box-sizing: border-box;
+  left: 8px;
+  overflow: hidden;
+  padding: 0 8px;
+  text-overflow: ellipsis;
+  transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+  width: auto;
+  z-index: 1;
+  transform-origin: bottom left;
+}

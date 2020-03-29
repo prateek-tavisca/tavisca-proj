@@ -1,0 +1,24 @@
+:host {
+  --indicator-color-checked: initial;
+  --ripple-color: currentColor;
+  --color-activated: initial;
+
+  display: flex;
+
+  align-items: stretch;
+  justify-content: center;
+
+  width: 100%;
+
+  text-align: center;
+  justify-content: flex-start;
+
+  width: auto;
+
+  overflow-x: auto;
+}
+
+:host(.segment-disabled),
+::slotted(.segment-button-disabled) {
+  pointer-events: none;
+}

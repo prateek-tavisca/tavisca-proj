@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      CxLoyalty
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="mt-10 home-page">
+    <trav-tab-bar
+      [(ngModel)]="segment"
+      (tabChanged)="onTabChange($event)"
+      name="segment"
+    >
+      <trav-tab-button class="tab-button" value="flight"
+        ><ion-icon src="/assets/icon/airplane-outline.svg"></ion-icon
+        >Flight</trav-tab-button
+      >
+      <trav-tab-button value="hotel"
+        ><ion-icon src="/assets/icon/hotel.svg"></ion-icon
+        >Hotel</trav-tab-button
+      >
+      <trav-tab-button value="car"
+        ><ion-icon src="/assets/icon/car-outline.svg"></ion-icon
+        >Car</trav-tab-button
+      >
+      <trav-tab-button value="activity"
+        ><ion-icon src="/assets/icon/flag-outline.svg"></ion-icon
+        >Activity</trav-tab-button
+      >
+    </trav-tab-bar>
+    <div [ngSwitch]="segment">
+      <trav-flights *ngSwitchCase="'flight'"> </trav-flights>
+
+      <ion-card *ngSwitchCase="'hotel'">
+        <ion-card-header>
+          Card Info
+        </ion-card-header>
+        <ion-card-content>
+          Your card info content here
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card *ngSwitchCase="'activity'">
+        <ion-card-header>
+          Change Password
+        </ion-card-header>
+        <ion-card-content>
+          Your change password form here
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,42 @@
+/// @prop - Width of the bottom border on the segment button
+$segment-button-border-bottom-width: 2px !default;
+
+/// @prop - Color of the bottom border on the segment button
+$segment-button-border-bottom-color: transparent !default;
+
+/// @prop - Opacity of the disabled segment button
+$segment-button-opacity-disabled: 0.3 !default;
+
+/// @prop - Minimum height of the segment button
+$segment-button-min-height: 48px !default;
+
+/// @prop - Minimum width of the segment button
+$segment-button-min-width: 90px !default;
+
+/// @prop - Maximum width of the segment button
+$segment-button-max-width: 360px !default;
+
+/// @prop - Line height of the segment button
+$segment-button-line-height: 40px !default;
+
+/// @prop - Font size of the segment button
+$segment-button-font-size: 14px !default;
+
+/// @prop - Letter spacing of the segment button
+$segment-button-letter-spacing: 0.06em !default;
+
+/// @prop - Font weight of the segment button
+$segment-button-font-weight: 500 !default;
+
+/// @prop - Transition of the segment button
+$segment-button-transition: color 0.15s linear 0s, opacity 0.15s linear 0s !default;
+
+/// @prop - Transition of the animated segment button
+$segment-button-transition-animated: transform 250ms
+  cubic-bezier(0.4, 0, 0.2, 1) !default;
+
+/// @prop - Size of an icon in the segment button
+$segment-button-icon-size: 24px !default;
+
+/// @prop - Line height of an icon in the segment button
+$segment-button-icon-line-height: 24 !default;
