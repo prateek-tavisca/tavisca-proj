@@ -1,0 +1,2010 @@
+[
+  {
+    "name": null,
+    "currency": "EUR",
+    "code": "ES",
+    "name_translations": {
+      "en": "Spain"
+    }
+  },
+  {
+    "name": null,
+    "currency": "BZD",
+    "code": "BZ",
+    "name_translations": {
+      "en": "Belize"
+    }
+  },
+  {
+    "name": "United Kingdom",
+    "currency": "GBP",
+    "code": "GB",
+    "name_translations": {
+      "en": "United Kingdom"
+    }
+  },
+  {
+    "name": null,
+    "currency": "SOS",
+    "code": "SO",
+    "name_translations": {
+      "en": "Somalia"
+    }
+  },
+  {
+    "name": null,
+    "currency": "USD",
+    "code": "VI",
+    "name_translations": {
+      "en": "U.S. Virgin Islands"
+    }
+  },
+  {
+    "name": null,
+    "currency": "AMD",
+    "code": "AM",
+    "name_translations": {
+      "en": "Armenia"
+    }
+  },
+  {
+    "name": null,
+    "currency": "PAB",
+    "code": "PA",
+    "name_translations": {
+      "en": "Panama"
+    }
+  },
+  {
+    "name": null,
+    "currency": "GHS",
+    "code": "GH",
+    "name_translations": {
+      "en": "Ghana"
+    }
+  },
+  {
+    "name": null,
+    "currency": "XCD",
+    "code": "GD",
+    "name_translations": {
+      "en": "Grenada"
+    }
+  },
+  {
+    "name": null,
+    "currency": "EUR",
+    "code": "ME",
+    "name_translations": {
+      "en": "Montenegro"
+    }
+  },
+  {
+    "name": null,
+    "currency": "AUD",
+    "code": "CC",
+    "name_translations": {
+      "en": "Cocos (Keeling) Islands"
+    }
+  },
+  {
+    "name": null,
+    "currency": "FKP",
+    "code": "FK",
+    "name_translations": {
+      "en": "Falkland Islands"
+    }
+  },
+  {
+    "name": null,
+    "currency": "KRW",
+    "code": "KR",
+    "name_translations": {
+      "en": "South Korea"
+    }
+  },
+  {
+    "name": null,
+    "currency": "MDL",
+    "code": "MD",
+    "name_translations": {
+      "en": "Moldova"
+    }
+  },
+  {
+    "name": null,
+    "currency": "XPF",
+    "code": "NC",
+    "name_translations": {
+      "en": "New Caledonia"
+    }
+  },
+  {
+    "name": null,
+    "currency": "PHP",
+    "code": "PH",
+    "name_translations": {
+      "en": "Philippines"
+    }
+  },
+  {
+    "name": null,
+    "currency": "ANG",
+    "code": "CW",
+    "name_translations": {
+      "en": "Curaçao"
+    }
+  },
+  {
+    "name": null,
+    "currency": "PEN",
+    "code": "PE",
+    "name_translations": {
+      "en": "Peru"
+    }
+  },
+  {
+    "name": null,
+    "currency": "ZWD",
+    "code": "ZW",
+    "name_translations": {
+      "en": "Zimbabwe"
+    }
+  },
+  {
+    "name": null,
+    "currency": "KMF",
+    "code": "KM",
+    "name_translations": {
+      "en": "Comoros"
+    }
+  },
+  {
+    "name": null,
+    "currency": "EUR",
+    "code": "MT",
+    "name_translations": {
+      "en": "Malta"
+    }
+  },
+  {
+    "name": null,
+    "currency": "SAR",
+    "code": "SA",
+    "name_translations": {
+      "en": "Saudi Arabia"
+    }
+  },
+  {
+    "name": null,
+    "currency": null,
+    "code": "AQ",
+    "name_translations": {
+      "en": "Antarctica"
+    }
+  },
+  {
+    "name": null,
+    "currency": "EUR",
+    "code": "AD",
+    "name_translations": {
+      "en": "Andorra"
+    }
+  },
+  {
+    "name": null,
+    "currency": "KYD",
+    "code": "KY",
+    "name_translations": {
+      "en": "Cayman Islands"
+    }
+  },
+  {
+    "name": null,
+    "currency": "USD",
+    "code": "FM",
+    "name_translations": {
+      "en": "Micronesia"
+    }
+  },
+  {
+    "name": null,
+    "currency": "EUR",
+    "code": "BL",
+    "name_translations": {
+      "en": "Saint Barthélemy"
+    }
+  },
+  {
+    "name": null,
+    "currency": "EUR",
+    "code": "GP",
+    "name_translations": {
+      "en": "Guadeloupe"
+    }
+  },
+  {
+    "name": null,
+    "currency": "AED",
+    "code": "AE",
+    "name_translations": {
+      "en": "United Arab Emirates"
+    }
+  },
+  {
+    "name": null,
+    "currency": "USD",
+    "code": "MP",
+    "name_translations": {
+      "en": "Northern Mariana Islands"
+    }
+  },
+  {
+    "name": null,
+    "currency": "CZK",
+    "code": "CZ",
+    "name_translations": {
+      "en": "Czech Republic"
+    }
+  },
+  {
+    "name": null,
+    "currency": "XOF",
+    "code": "ML",
+    "name_translations": {
+      "en": "Mali"
+    }
+  },
+  {
+    "name": null,
+    "currency": "BRL",
+    "code": "BR",
+    "name_translations": {
+      "en": "Brazil"
+    }
+  },
+  {
+    "name": null,
+    "currency": "DJF",
+    "code": "DJ",
+    "name_translations": {
+      "en": "Djibouti"
+    }
+  },
+  {
+    "name": null,
+    "currency": "EUR",
+    "code": "EE",
+    "name_translations": {
+      "en": "Estonia"
+    }
+  },
+  {
+    "name": null,
+    "currency": "CHF",
+    "code": "LI",
+    "name_translations": {
+      "en": "Liechtenstein"
+    }
+  },
+  {
+    "name": null,
+    "currency": "GTQ",
+    "code": "GT",
+    "name_translations": {
+      "en": "Guatemala"
+    }
+  },
+  {
+    "name": null,
+    "currency": "ERN",
+    "code": "ER",
+    "name_translations": {
+      "en": "Eritrea"
+    }
+  },
+  {
+    "name": null,
+    "currency": "LSL",
+    "code": "LS",
+    "name_translations": {
+      "en": "Lesotho"
+    }
+  },
+  {
+    "name": null,
+    "currency": "LBP",
+    "code": "LB",
+    "name_translations": {
+      "en": "Lebanon"
+    }
+  },
+  {
+    "name": "Saint Vincent and the Grenadines",
+    "currency": "XCD",
+    "code": "VC",
+    "name_translations": {
+      "en": "Saint Vincent and the Grenadines"
+    }
+  },
+  {
+    "name": null,
+    "currency": "EUR",
+    "code": "LU",
+    "name_translations": {
+      "en": "Luxembourg"
+    }
+  },
+  {
+    "name": null,
+    "currency": "MUR",
+    "code": "MU",
+    "name_translations": {
+      "en": "Mauritius"
+    }
+  },
+  {
+    "name": null,
+    "currency": "QAR",
+    "code": "QA",
+    "name_translations": {
+      "en": "Qatar"
+    }
+  },
+  {
+    "name": null,
+    "currency": "EUR",
+    "code": "CY",
+    "name_translations": {
+      "en": "Cyprus"
+    }
+  },
+  {
+    "name": null,
+    "currency": "TND",
+    "code": "TN",
+    "name_translations": {
+      "en": "Tunisia"
+    }
+  },
+  {
+    "name": null,
+    "currency": "AUD",
+    "code": "NF",
+    "name_translations": {
+      "en": "Norfolk Island"
+    }
+  },
+  {
+    "name": null,
+    "currency": "SLL",
+    "code": "SL",
+    "name_translations": {
+      "en": "Sierra Leone"
+    }
+  },
+  {
+    "name": null,
+    "currency": "CLP",
+    "code": "CL",
+    "name_translations": {
+      "en": "Chile"
+    }
+  },
+  {
+    "name": null,
+    "currency": "JMD",
+    "code": "JM",
+    "name_translations": {
+      "en": "Jamaica"
+    }
+  },
+  {
+    "name": null,
+    "currency": "MMK",
+    "code": "MM",
+    "name_translations": {
+      "en": "Myanmar"
+    }
+  },
+  {
+    "name": null,
+    "currency": "NZD",
+    "code": "PN",
+    "name_translations": {
+      "en": "Pitcairn Islands"
+    }
+  },
+  {
+    "name": null,
+    "currency": "SGD",
+    "code": "SG",
+    "name_translations": {
+      "en": "Singapore"
+    }
+  },
+  {
+    "name": null,
+    "currency": "XPF",
+    "code": "PF",
+    "name_translations": {
+      "en": "French Polynesia"
+    }
+  },
+  {
+    "name": null,
+    "currency": "MKD",
+    "code": "MK",
+    "name_translations": {
+      "en": "North Macedonia"
+    }
+  },
+  {
+    "name": null,
+    "currency": "SEK",
+    "code": "SE",
+    "name_translations": {
+      "en": "Sweden"
+    }
+  },
+  {
+    "name": null,
+    "currency": "BND",
+    "code": "BN",
+    "name_translations": {
+      "en": "Brunei"
+    }
+  },
+  {
+    "name": null,
+    "currency": "XCD",
+    "code": "DM",
+    "name_translations": {
+      "en": "Dominica"
+    }
+  },
+  {
+    "name": null,
+    "currency": "NZD",
+    "code": "TK",
+    "name_translations": {
+      "en": "Tokelau"
+    }
+  },
+  {
+    "name": null,
+    "currency": "EUR",
+    "code": "IE",
+    "name_translations": {
+      "en": "Ireland"
+    }
+  },
+  {
+    "name": null,
+    "currency": "EUR",
+    "code": "RE",
+    "name_translations": {
+      "en": "Réunion"
+    }
+  },
+  {
+    "name": null,
+    "currency": "NGN",
+    "code": "NG",
+    "name_translations": {
+      "en": "Nigeria"
+    }
+  },
+  {
+    "name": null,
+    "currency": "USD",
+    "code": "PR",
+    "name_translations": {
+      "en": "Puerto Rico"
+    }
+  },
+  {
+    "name": null,
+    "currency": "NOK",
+    "code": "SJ",
+    "name_translations": {
+      "en": "Svalbard and Jan Mayen"
+    }
+  },
+  {
+    "name": null,
+    "currency": "EUR",
+    "code": "AX",
+    "name_translations": {
+      "en": "Åland Islands"
+    }
+  },
+  {
+    "name": null,
+    "currency": "EUR",
+    "code": "SI",
+    "name_translations": {
+      "en": "Slovenia"
+    }
+  },
+  {
+    "name": null,
+    "currency": "DKK",
+    "code": "FO",
+    "name_translations": {
+      "en": "Faroe Islands"
+    }
+  },
+  {
+    "name": null,
+    "currency": "EUR",
+    "code": "MC",
+    "name_translations": {
+      "en": "Monaco"
+    }
+  },
+  {
+    "name": null,
+    "currency": "USD",
+    "code": "TC",
+    "name_translations": {
+      "en": "Turks and Caicos Islands"
+    }
+  },
+  {
+    "name": null,
+    "currency": "EUR",
+    "code": "MQ",
+    "name_translations": {
+      "en": "Martinique"
+    }
+  },
+  {
+    "name": null,
+    "currency": "CNY",
+    "code": "CN",
+    "name_translations": {
+      "en": "China"
+    }
+  },
+  {
+    "name": null,
+    "currency": "HUF",
+    "code": "HU",
+    "name_translations": {
+      "en": "Hungary"
+    }
+  },
+  {
+    "name": null,
+    "currency": "ETB",
+    "code": "ET",
+    "name_translations": {
+      "en": "Ethiopia"
+    }
+  },
+  {
+    "name": null,
+    "currency": "XCD",
+    "code": "KN",
+    "name_translations": {
+      "en": "Saint Kitts and Nevis"
+    }
+  },
+  {
+    "name": null,
+    "currency": "CDF",
+    "code": "CD",
+    "name_translations": {
+      "en": "Democratic Republic of the Congo"
+    }
+  },
+  {
+    "name": null,
+    "currency": "SHP",
+    "code": "SH",
+    "name_translations": {
+      "en": "Saint Helena, Ascension and Tristan da Cunha"
+    }
+  },
+  {
+    "name": null,
+    "currency": "USD",
+    "code": "EC",
+    "name_translations": {
+      "en": "Ecuador"
+    }
+  },
+  {
+    "name": null,
+    "currency": "BYR",
+    "code": "BY",
+    "name_translations": {
+      "en": "Belarus"
+    }
+  },
+  {
+    "name": null,
+    "currency": "AUD",
+    "code": "TV",
+    "name_translations": {
+      "en": "Tuvalu"
+    }
+  },
+  {
+    "name": null,
+    "currency": "PKR",
+    "code": "PK",
+    "name_translations": {
+      "en": "Pakistan"
+    }
+  },
+  {
+    "name": null,
+    "currency": "USD",
+    "code": "IO",
+    "name_translations": {
+      "en": "British Indian Ocean Territory"
+    }
+  },
+  {
+    "name": null,
+    "currency": "CVE",
+    "code": "CV",
+    "name_translations": {
+      "en": "Cape Verde"
+    }
+  },
+  {
+    "name": null,
+    "currency": "NZD",
+    "code": "NU",
+    "name_translations": {
+      "en": "Niue"
+    }
+  },
+  {
+    "name": null,
+    "currency": "XCD",
+    "code": "AG",
+    "name_translations": {
+      "en": "Antigua and Barbuda"
+    }
+  },
+  {
+    "name": null,
+    "currency": "PYG",
+    "code": "PY",
+    "name_translations": {
+      "en": "Paraguay"
+    }
+  },
+  {
+    "name": null,
+    "currency": "CRC",
+    "code": "CR",
+    "name_translations": {
+      "en": "Costa Rica"
+    }
+  },
+  {
+    "name": null,
+    "currency": "DKK",
+    "code": "GL",
+    "name_translations": {
+      "en": "Greenland"
+    }
+  },
+  {
+    "name": null,
+    "currency": "BWP",
+    "code": "BW",
+    "name_translations": {
+      "en": "Botswana"
+    }
+  },
+  {
+    "name": null,
+    "currency": "HKD",
+    "code": "HK",
+    "name_translations": {
+      "en": "Hong Kong"
+    }
+  },
+  {
+    "name": null,
+    "currency": "AFN",
+    "code": "AF",
+    "name_translations": {
+      "en": "Afghanistan"
+    }
+  },
+  {
+    "name": null,
+    "currency": "RSD",
+    "code": "RS",
+    "name_translations": {
+      "en": "Serbia"
+    }
+  },
+  {
+    "name": null,
+    "currency": "AZN",
+    "code": "AZ",
+    "name_translations": {
+      "en": "Azerbaijan"
+    }
+  },
+  {
+    "name": null,
+    "currency": "CUP",
+    "code": "CU",
+    "name_translations": {
+      "en": "Cuba"
+    }
+  },
+  {
+    "name": null,
+    "currency": "EUR",
+    "code": "FI",
+    "name_translations": {
+      "en": "Finland"
+    }
+  },
+  {
+    "name": null,
+    "currency": "HTG",
+    "code": "HT",
+    "name_translations": {
+      "en": "Haiti"
+    }
+  },
+  {
+    "name": null,
+    "currency": "VND",
+    "code": "VN",
+    "name_translations": {
+      "en": "Vietnam"
+    }
+  },
+  {
+    "name": null,
+    "currency": "XOF",
+    "code": "CI",
+    "name_translations": {
+      "en": "Ivory Coast"
+    }
+  },
+  {
+    "name": null,
+    "currency": "GBP",
+    "code": "JE",
+    "name_translations": {
+      "en": "Jersey"
+    }
+  },
+  {
+    "name": null,
+    "currency": "BBD",
+    "code": "BB",
+    "name_translations": {
+      "en": "Barbados"
+    }
+  },
+  {
+    "name": null,
+    "currency": "WST",
+    "code": "WS",
+    "name_translations": {
+      "en": "Samoa"
+    }
+  },
+  {
+    "name": null,
+    "currency": "MZN",
+    "code": "MZ",
+    "name_translations": {
+      "en": "Mozambique"
+    }
+  },
+  {
+    "name": null,
+    "currency": "XAF",
+    "code": "GA",
+    "name_translations": {
+      "en": "Gabon"
+    }
+  },
+  {
+    "name": null,
+    "currency": "XCD",
+    "code": "MS",
+    "name_translations": {
+      "en": "Montserrat"
+    }
+  },
+  {
+    "name": null,
+    "currency": "DOP",
+    "code": "DO",
+    "name_translations": {
+      "en": "Dominican Republic"
+    }
+  },
+  {
+    "name": null,
+    "currency": "RUB",
+    "code": "RU",
+    "name_translations": {
+      "en": "Russia"
+    }
+  },
+  {
+    "name": null,
+    "currency": "COP",
+    "code": "CO",
+    "name_translations": {
+      "en": "Colombia"
+    }
+  },
+  {
+    "name": null,
+    "currency": "GNF",
+    "code": "GN",
+    "name_translations": {
+      "en": "Guinea"
+    }
+  },
+  {
+    "name": null,
+    "currency": "XCD",
+    "code": "LC",
+    "name_translations": {
+      "en": "Saint Lucia"
+    }
+  },
+  {
+    "name": null,
+    "currency": "GBP",
+    "code": "GG",
+    "name_translations": {
+      "en": "Guernsey"
+    }
+  },
+  {
+    "name": null,
+    "currency": "USD",
+    "code": "PW",
+    "name_translations": {
+      "en": "Palau"
+    }
+  },
+  {
+    "name": null,
+    "currency": "UGX",
+    "code": "UG",
+    "name_translations": {
+      "en": "Uganda"
+    }
+  },
+  {
+    "name": null,
+    "currency": "AWG",
+    "code": "AW",
+    "name_translations": {
+      "en": "Aruba"
+    }
+  },
+  {
+    "name": null,
+    "currency": "EUR",
+    "code": "GF",
+    "name_translations": {
+      "en": "French Guiana"
+    }
+  },
+  {
+    "name": null,
+    "currency": "NZD",
+    "code": "CK",
+    "name_translations": {
+      "en": "Cook Islands"
+    }
+  },
+  {
+    "name": null,
+    "currency": "XAF",
+    "code": "CG",
+    "name_translations": {
+      "en": "Republic of the Congo"
+    }
+  },
+  {
+    "name": null,
+    "currency": "USD",
+    "code": "TL",
+    "name_translations": {
+      "en": "East Timor"
+    }
+  },
+  {
+    "name": "Heard Island and McDonald Islands",
+    "currency": "AUD",
+    "code": "HM",
+    "name_translations": {
+      "en": "Heard Island and McDonald Islands"
+    }
+  },
+  {
+    "name": null,
+    "currency": "EUR",
+    "code": "XK",
+    "name_translations": {
+      "en": "Kosovo"
+    }
+  },
+  {
+    "name": null,
+    "currency": "GIP",
+    "code": "GI",
+    "name_translations": {
+      "en": "Gibraltar"
+    }
+  },
+  {
+    "name": null,
+    "currency": "EUR",
+    "code": "SM",
+    "name_translations": {
+      "en": "San Marino"
+    }
+  },
+  {
+    "name": null,
+    "currency": "EUR",
+    "code": "PT",
+    "name_translations": {
+      "en": "Portugal"
+    }
+  },
+  {
+    "name": null,
+    "currency": "RWF",
+    "code": "RW",
+    "name_translations": {
+      "en": "Rwanda"
+    }
+  },
+  {
+    "name": null,
+    "currency": "OMR",
+    "code": "OM",
+    "name_translations": {
+      "en": "Oman"
+    }
+  },
+  {
+    "name": null,
+    "currency": "KPW",
+    "code": "KP",
+    "name_translations": {
+      "en": "North Korea"
+    }
+  },
+  {
+    "name": null,
+    "currency": "USD",
+    "code": "VG",
+    "name_translations": {
+      "en": "British Virgin Islands"
+    }
+  },
+  {
+    "name": null,
+    "currency": "MRO",
+    "code": "MR",
+    "name_translations": {
+      "en": "Mauritania"
+    }
+  },
+  {
+    "name": null,
+    "currency": "BTN",
+    "code": "BT",
+    "name_translations": {
+      "en": "Bhutan"
+    }
+  },
+  {
+    "name": null,
+    "currency": "EUR",
+    "code": "MF",
+    "name_translations": {
+      "en": "Saint Martin"
+    }
+  },
+  {
+    "name": null,
+    "currency": "ZAR",
+    "code": "ZA",
+    "name_translations": {
+      "en": "South Africa"
+    }
+  },
+  {
+    "name": null,
+    "currency": "XCD",
+    "code": "AI",
+    "name_translations": {
+      "en": "Anguilla"
+    }
+  },
+  {
+    "name": null,
+    "currency": "PLN",
+    "code": "PL",
+    "name_translations": {
+      "en": "Poland"
+    }
+  },
+  {
+    "name": null,
+    "currency": "BHD",
+    "code": "BH",
+    "name_translations": {
+      "en": "Bahrain"
+    }
+  },
+  {
+    "name": null,
+    "currency": "MYR",
+    "code": "MY",
+    "name_translations": {
+      "en": "Malaysia"
+    }
+  },
+  {
+    "name": null,
+    "currency": "SBD",
+    "code": "SB",
+    "name_translations": {
+      "en": "Solomon Islands"
+    }
+  },
+  {
+    "name": null,
+    "currency": "AUD",
+    "code": "NR",
+    "name_translations": {
+      "en": "Nauru"
+    }
+  },
+  {
+    "name": null,
+    "currency": "GYD",
+    "code": "GY",
+    "name_translations": {
+      "en": "Guyana"
+    }
+  },
+  {
+    "name": null,
+    "currency": "USD",
+    "code": "MH",
+    "name_translations": {
+      "en": "Marshall Islands"
+    }
+  },
+  {
+    "name": null,
+    "currency": "GMD",
+    "code": "GM",
+    "name_translations": {
+      "en": "Gambia"
+    }
+  },
+  {
+    "name": null,
+    "currency": "USD",
+    "code": "AS",
+    "name_translations": {
+      "en": "American Samoa"
+    }
+  },
+  {
+    "name": null,
+    "currency": "MAD",
+    "code": "EH",
+    "name_translations": {
+      "en": "Western Sahara"
+    }
+  },
+  {
+    "name": null,
+    "currency": "TTD",
+    "code": "TT",
+    "name_translations": {
+      "en": "Trinidad and Tobago"
+    }
+  },
+  {
+    "name": null,
+    "currency": "EUR",
+    "code": "YT",
+    "name_translations": {
+      "en": "Mayotte"
+    }
+  },
+  {
+    "name": null,
+    "currency": "XOF",
+    "code": "NE",
+    "name_translations": {
+      "en": "Niger"
+    }
+  },
+  {
+    "name": null,
+    "currency": "EUR",
+    "code": "PM",
+    "name_translations": {
+      "en": "Saint Pierre and Miquelon"
+    }
+  },
+  {
+    "name": null,
+    "currency": "USD",
+    "code": "GU",
+    "name_translations": {
+      "en": "Guam"
+    }
+  },
+  {
+    "name": "South Georgia and the South Sandwich Islands",
+    "currency": "GBP",
+    "code": "GS",
+    "name_translations": {
+      "en": "South Georgia and the South Sandwich Islands"
+    }
+  },
+  {
+    "name": null,
+    "currency": "AUD",
+    "code": "CX",
+    "name_translations": {
+      "en": "Christmas Island"
+    }
+  },
+  {
+    "name": null,
+    "currency": "EUR",
+    "code": "TF",
+    "name_translations": {
+      "en": "French Southern Territories"
+    }
+  },
+  {
+    "name": null,
+    "currency": "IQD",
+    "code": "IQ",
+    "name_translations": {
+      "en": "Iraq"
+    }
+  },
+  {
+    "name": null,
+    "currency": "NOK",
+    "code": "BV",
+    "name_translations": {
+      "en": "Bouvet Island"
+    }
+  },
+  {
+    "name": null,
+    "currency": "INR",
+    "code": "IN",
+    "name_translations": {
+      "en": "India"
+    }
+  },
+  {
+    "name": null,
+    "currency": "BOB",
+    "code": "BO",
+    "name_translations": {
+      "en": "Bolivia"
+    }
+  },
+  {
+    "name": null,
+    "currency": "ARS",
+    "code": "AR",
+    "name_translations": {
+      "en": "Argentina"
+    }
+  },
+  {
+    "name": null,
+    "currency": "TMT",
+    "code": "TM",
+    "name_translations": {
+      "en": "Turkmenistan"
+    }
+  },
+  {
+    "name": null,
+    "currency": "BIF",
+    "code": "BI",
+    "name_translations": {
+      "en": "Burundi"
+    }
+  },
+  {
+    "name": null,
+    "currency": "VEF",
+    "code": "VE",
+    "name_translations": {
+      "en": "Venezuela"
+    }
+  },
+  {
+    "name": null,
+    "currency": "UZS",
+    "code": "UZ",
+    "name_translations": {
+      "en": "Uzbekistan"
+    }
+  },
+  {
+    "name": null,
+    "currency": "XAF",
+    "code": "CM",
+    "name_translations": {
+      "en": "Cameroon"
+    }
+  },
+  {
+    "name": null,
+    "currency": "EGP",
+    "code": "EG",
+    "name_translations": {
+      "en": "Egypt"
+    }
+  },
+  {
+    "name": null,
+    "currency": "GBP",
+    "code": "IM",
+    "name_translations": {
+      "en": "Isle of Man"
+    }
+  },
+  {
+    "name": null,
+    "currency": "ANG",
+    "code": "SX",
+    "name_translations": {
+      "en": "Sint Maarten"
+    }
+  },
+  {
+    "name": null,
+    "currency": "EUR",
+    "code": "VA",
+    "name_translations": {
+      "en": "Vatican City"
+    }
+  },
+  {
+    "name": null,
+    "currency": "ISK",
+    "code": "IS",
+    "name_translations": {
+      "en": "Iceland"
+    }
+  },
+  {
+    "name": null,
+    "currency": "EUR",
+    "code": "SK",
+    "name_translations": {
+      "en": "Slovakia"
+    }
+  },
+  {
+    "name": null,
+    "currency": "THB",
+    "code": "TH",
+    "name_translations": {
+      "en": "Thailand"
+    }
+  },
+  {
+    "name": null,
+    "currency": "UYU",
+    "code": "UY",
+    "name_translations": {
+      "en": "Uruguay"
+    }
+  },
+  {
+    "name": null,
+    "currency": "SYP",
+    "code": "SY",
+    "name_translations": {
+      "en": "Syria"
+    }
+  },
+  {
+    "name": null,
+    "currency": "SZL",
+    "code": "SZ",
+    "name_translations": {
+      "en": "Eswatini"
+    }
+  },
+  {
+    "name": null,
+    "currency": "AUD",
+    "code": "AU",
+    "name_translations": {
+      "en": "Australia"
+    }
+  },
+  {
+    "name": null,
+    "currency": "XOF",
+    "code": "SN",
+    "name_translations": {
+      "en": "Senegal"
+    }
+  },
+  {
+    "name": null,
+    "currency": "PGK",
+    "code": "PG",
+    "name_translations": {
+      "en": "Papua New Guinea"
+    }
+  },
+  {
+    "name": null,
+    "currency": "XPF",
+    "code": "WF",
+    "name_translations": {
+      "en": "Wallis and Futuna"
+    }
+  },
+  {
+    "name": null,
+    "currency": "DKK",
+    "code": "DK",
+    "name_translations": {
+      "en": "Denmark"
+    }
+  },
+  {
+    "name": null,
+    "currency": "MWK",
+    "code": "MW",
+    "name_translations": {
+      "en": "Malawi"
+    }
+  },
+  {
+    "name": null,
+    "currency": "SDG",
+    "code": "SD",
+    "name_translations": {
+      "en": "Sudan"
+    }
+  },
+  {
+    "name": null,
+    "currency": "NOK",
+    "code": "NO",
+    "name_translations": {
+      "en": "Norway"
+    }
+  },
+  {
+    "name": null,
+    "currency": "RON",
+    "code": "RO",
+    "name_translations": {
+      "en": "Romania"
+    }
+  },
+  {
+    "name": null,
+    "currency": "ILS",
+    "code": "IL",
+    "name_translations": {
+      "en": "Israel"
+    }
+  },
+  {
+    "name": null,
+    "currency": "KWD",
+    "code": "KW",
+    "name_translations": {
+      "en": "Kuwait"
+    }
+  },
+  {
+    "name": null,
+    "currency": "ILS",
+    "code": "PS",
+    "name_translations": {
+      "en": "Palestine"
+    }
+  },
+  {
+    "name": null,
+    "currency": "ZMK",
+    "code": "ZM",
+    "name_translations": {
+      "en": "Zambia"
+    }
+  },
+  {
+    "name": null,
+    "currency": "ALL",
+    "code": "AL",
+    "name_translations": {
+      "en": "Albania"
+    }
+  },
+  {
+    "name": null,
+    "currency": "EUR",
+    "code": "NL",
+    "name_translations": {
+      "en": "Netherlands"
+    }
+  },
+  {
+    "name": null,
+    "currency": "XAF",
+    "code": "GQ",
+    "name_translations": {
+      "en": "Equatorial Guinea"
+    }
+  },
+  {
+    "name": null,
+    "currency": "EUR",
+    "code": "IT",
+    "name_translations": {
+      "en": "Italy"
+    }
+  },
+  {
+    "name": null,
+    "currency": "USD",
+    "code": "SV",
+    "name_translations": {
+      "en": "El Salvador"
+    }
+  },
+  {
+    "name": null,
+    "currency": "LTL",
+    "code": "LT",
+    "name_translations": {
+      "en": "Lithuania"
+    }
+  },
+  {
+    "name": null,
+    "currency": "CAD",
+    "code": "CA",
+    "name_translations": {
+      "en": "Canada"
+    }
+  },
+  {
+    "name": null,
+    "currency": "XAF",
+    "code": "CF",
+    "name_translations": {
+      "en": "Central African Republic"
+    }
+  },
+  {
+    "name": null,
+    "currency": "MNT",
+    "code": "MN",
+    "name_translations": {
+      "en": "Mongolia"
+    }
+  },
+  {
+    "name": null,
+    "currency": "MGA",
+    "code": "MG",
+    "name_translations": {
+      "en": "Madagascar"
+    }
+  },
+  {
+    "name": null,
+    "currency": "KGS",
+    "code": "KG",
+    "name_translations": {
+      "en": "Kyrgyzstan"
+    }
+  },
+  {
+    "name": null,
+    "currency": "LYD",
+    "code": "LY",
+    "name_translations": {
+      "en": "Libya"
+    }
+  },
+  {
+    "name": null,
+    "currency": "KZT",
+    "code": "KZ",
+    "name_translations": {
+      "en": "Kazakhstan"
+    }
+  },
+  {
+    "name": null,
+    "currency": "KHR",
+    "code": "KH",
+    "name_translations": {
+      "en": "Cambodia"
+    }
+  },
+  {
+    "name": null,
+    "currency": "XAF",
+    "code": "TD",
+    "name_translations": {
+      "en": "Chad"
+    }
+  },
+  {
+    "name": null,
+    "currency": "KES",
+    "code": "KE",
+    "name_translations": {
+      "en": "Kenya"
+    }
+  },
+  {
+    "name": null,
+    "currency": "LVL",
+    "code": "LV",
+    "name_translations": {
+      "en": "Latvia"
+    }
+  },
+  {
+    "name": null,
+    "currency": "SRD",
+    "code": "SR",
+    "name_translations": {
+      "en": "Suriname"
+    }
+  },
+  {
+    "name": null,
+    "currency": "XOF",
+    "code": "TG",
+    "name_translations": {
+      "en": "Togo"
+    }
+  },
+  {
+    "name": null,
+    "currency": "BSD",
+    "code": "BS",
+    "name_translations": {
+      "en": "Bahamas"
+    }
+  },
+  {
+    "name": null,
+    "currency": "GEL",
+    "code": "GE",
+    "name_translations": {
+      "en": "Georgia"
+    }
+  },
+  {
+    "name": null,
+    "currency": "JOD",
+    "code": "JO",
+    "name_translations": {
+      "en": "Jordan"
+    }
+  },
+  {
+    "name": null,
+    "currency": "EUR",
+    "code": "AT",
+    "name_translations": {
+      "en": "Austria"
+    }
+  },
+  {
+    "name": null,
+    "currency": "IDR",
+    "code": "ID",
+    "name_translations": {
+      "en": "Indonesia"
+    }
+  },
+  {
+    "name": null,
+    "currency": "CHF",
+    "code": "CH",
+    "name_translations": {
+      "en": "Switzerland"
+    }
+  },
+  {
+    "name": null,
+    "currency": "MOP",
+    "code": "MO",
+    "name_translations": {
+      "en": "Macau"
+    }
+  },
+  {
+    "name": null,
+    "currency": "NIO",
+    "code": "NI",
+    "name_translations": {
+      "en": "Nicaragua"
+    }
+  },
+  {
+    "name": null,
+    "currency": "EUR",
+    "code": "FR",
+    "name_translations": {
+      "en": "France"
+    }
+  },
+  {
+    "name": null,
+    "currency": "TZS",
+    "code": "TZ",
+    "name_translations": {
+      "en": "Tanzania"
+    }
+  },
+  {
+    "name": null,
+    "currency": "MVR",
+    "code": "MV",
+    "name_translations": {
+      "en": "Maldives"
+    }
+  },
+  {
+    "name": null,
+    "currency": "BGN",
+    "code": "BG",
+    "name_translations": {
+      "en": "Bulgaria"
+    }
+  },
+  {
+    "name": null,
+    "currency": "EUR",
+    "code": "GR",
+    "name_translations": {
+      "en": "Greece"
+    }
+  },
+  {
+    "name": null,
+    "currency": "DZD",
+    "code": "DZ",
+    "name_translations": {
+      "en": "Algeria"
+    }
+  },
+  {
+    "name": null,
+    "currency": "XOF",
+    "code": "BF",
+    "name_translations": {
+      "en": "Burkina Faso"
+    }
+  },
+  {
+    "name": null,
+    "currency": "EUR",
+    "code": "BE",
+    "name_translations": {
+      "en": "Belgium"
+    }
+  },
+  {
+    "name": null,
+    "currency": "MAD",
+    "code": "MA",
+    "name_translations": {
+      "en": "Morocco"
+    }
+  },
+  {
+    "name": null,
+    "currency": "EUR",
+    "code": "DE",
+    "name_translations": {
+      "en": "Germany"
+    }
+  },
+  {
+    "name": null,
+    "currency": "AOA",
+    "code": "AO",
+    "name_translations": {
+      "en": "Angola"
+    }
+  },
+  {
+    "name": null,
+    "currency": "YER",
+    "code": "YE",
+    "name_translations": {
+      "en": "Yemen"
+    }
+  },
+  {
+    "name": null,
+    "currency": "BAM",
+    "code": "BA",
+    "name_translations": {
+      "en": "Bosnia and Herzegovina"
+    }
+  },
+  {
+    "name": null,
+    "currency": "SCR",
+    "code": "SC",
+    "name_translations": {
+      "en": "Seychelles"
+    }
+  },
+  {
+    "name": null,
+    "currency": "BDT",
+    "code": "BD",
+    "name_translations": {
+      "en": "Bangladesh"
+    }
+  },
+  {
+    "name": null,
+    "currency": "FJD",
+    "code": "FJ",
+    "name_translations": {
+      "en": "Fiji"
+    }
+  },
+  {
+    "name": null,
+    "currency": "HNL",
+    "code": "HN",
+    "name_translations": {
+      "en": "Honduras"
+    }
+  },
+  {
+    "name": null,
+    "currency": "TWD",
+    "code": "TW",
+    "name_translations": {
+      "en": "Taiwan"
+    }
+  },
+  {
+    "name": null,
+    "currency": "TOP",
+    "code": "TO",
+    "name_translations": {
+      "en": "Tonga"
+    }
+  },
+  {
+    "name": null,
+    "currency": "IRR",
+    "code": "IR",
+    "name_translations": {
+      "en": "Iran"
+    }
+  },
+  {
+    "name": null,
+    "currency": "STD",
+    "code": "ST",
+    "name_translations": {
+      "en": "São Tomé and Príncipe"
+    }
+  },
+  {
+    "name": null,
+    "currency": "BMD",
+    "code": "BM",
+    "name_translations": {
+      "en": "Bermuda"
+    }
+  },
+  {
+    "name": null,
+    "currency": "VUV",
+    "code": "VU",
+    "name_translations": {
+      "en": "Vanuatu"
+    }
+  },
+  {
+    "name": null,
+    "currency": "AUD",
+    "code": "KI",
+    "name_translations": {
+      "en": "Kiribati"
+    }
+  },
+  {
+    "name": null,
+    "currency": "NAD",
+    "code": "NA",
+    "name_translations": {
+      "en": "Namibia"
+    }
+  },
+  {
+    "name": null,
+    "currency": "JPY",
+    "code": "JP",
+    "name_translations": {
+      "en": "Japan"
+    }
+  },
+  {
+    "name": "United States Minor Outlying Islands",
+    "currency": "USD",
+    "code": "UM",
+    "name_translations": {
+      "en": "United States Minor Outlying Islands"
+    }
+  },
+  {
+    "name": null,
+    "currency": "LAK",
+    "code": "LA",
+    "name_translations": {
+      "en": "Laos"
+    }
+  },
+  {
+    "name": "United States",
+    "currency": "USD",
+    "code": "US",
+    "name_translations": {
+      "en": "United States"
+    }
+  },
+  {
+    "name": null,
+    "currency": "NZD",
+    "code": "NZ",
+    "name_translations": {
+      "en": "New Zealand"
+    }
+  },
+  {
+    "name": null,
+    "currency": null,
+    "code": "SS",
+    "name_translations": {
+      "en": "South Sudan"
+    }
+  },
+  {
+    "name": null,
+    "currency": "HRK",
+    "code": "HR",
+    "name_translations": {
+      "en": "Croatia"
+    }
+  },
+  {
+    "name": null,
+    "currency": "TRY",
+    "code": "TR",
+    "name_translations": {
+      "en": "Turkey"
+    }
+  },
+  {
+    "name": null,
+    "currency": "USD",
+    "code": "BQ",
+    "name_translations": {
+      "en": "Caribbean Netherlands"
+    }
+  },
+  {
+    "name": null,
+    "currency": "UAH",
+    "code": "UA",
+    "name_translations": {
+      "en": "Ukraine"
+    }
+  },
+  {
+    "name": null,
+    "currency": "LRD",
+    "code": "LR",
+    "name_translations": {
+      "en": "Liberia"
+    }
+  },
+  {
+    "name": null,
+    "currency": "XOF",
+    "code": "BJ",
+    "name_translations": {
+      "en": "Benin"
+    }
+  },
+  {
+    "name": null,
+    "currency": "LKR",
+    "code": "LK",
+    "name_translations": {
+      "en": "Sri Lanka"
+    }
+  },
+  {
+    "name": null,
+    "currency": "TJS",
+    "code": "TJ",
+    "name_translations": {
+      "en": "Tajikistan"
+    }
+  },
+  {
+    "name": null,
+    "currency": "NPR",
+    "code": "NP",
+    "name_translations": {
+      "en": "Nepal"
+    }
+  },
+  {
+    "name": null,
+    "currency": "MXN",
+    "code": "MX",
+    "name_translations": {
+      "en": "Mexico"
+    }
+  },
+  {
+    "name": null,
+    "currency": "XOF",
+    "code": "GW",
+    "name_translations": {
+      "en": "Guinea-Bissau"
+    }
+  },
+  {
+    "name": "Crimea",
+    "currency": null,
+    "code": "KX",
+    "name_translations": {
+      "en": "Crimea"
+    }
+  }
+]

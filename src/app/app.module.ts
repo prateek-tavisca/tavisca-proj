@@ -1,3 +1,4 @@
+import { MockHttpCalIInterceptor } from "./core/intercept-api.service";
 import { SharedModule } from "./shared/shared.module";
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
@@ -9,6 +10,7 @@ import { StatusBar } from "@ionic-native/status-bar/ngx";
 
 import { AppComponent } from "./app.component";
 import { AppRoutingModule } from "./app-routing.module";
+import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,12 +19,18 @@ import { AppRoutingModule } from "./app-routing.module";
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    HttpClientModule
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: MockHttpCalIInterceptor,
+      multi: true
+    }
   ],
   bootstrap: [AppComponent]
 })

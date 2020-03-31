@@ -2,3 +2,21 @@ ion-toolbar {
   --background: var(--ion-color-primary);
   --color: var(--ion-color-light-tint);
 }
+
+.button.in-toolbar.button-clear {
+  --color: var(--ion-color-light-tint);
+  width: 28px;
+  height: 28px;
+}
+
+.ion-content .tab-bar-fixed {
+  top: 44px;
+}
+
+.ion-content.md .tab-bar-fixed {
+  top: 56px;
+}
+
+.ion-inner-content {
+  margin-top: 55px;
+}

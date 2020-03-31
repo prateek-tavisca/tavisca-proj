@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button type="button" (click)="goBack()">
+        <ion-icon src="/assets/icon/back-arrow.svg" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title> <span>cx</span>Loyalty</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="mt-10 home-page">
+    <button (click)="openFilterModal()">filter</button>
+    <app-flight-list></app-flight-list>
+  </div>
+</ion-content>

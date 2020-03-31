@@ -22,12 +22,17 @@ import { TabButtonComponent } from "../tab-button/tab-button.component";
       useExisting: forwardRef(() => TabGroupComponent),
       multi: true
     }
-  ]
+  ],
+  host: {
+    "[class.tab-bar-fixed]": "isFixedTab"
+  }
 })
 export class TabGroupComponent implements AfterContentInit, AfterViewInit {
   @ContentChildren(TabButtonComponent) tabButtons: QueryList<
     TabButtonComponent
   >;
+
+  @Input() isFixedTab = true;
   @Input() disable: boolean;
   @Output() tabChanged = new EventEmitter<string>();
   @Input() value: string;

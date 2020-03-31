@@ -1,14 +1,13 @@
-import { HomeDataService } from "./services/home-data.service";
-import { HomeRestApiService } from "./services/home-rest.service";
+import { SortComponent } from "./components/sort/sort.component";
+import { FiltersComponent } from "./components/filters/filters.component";
+import { SearchPage } from "./search.page";
 import { SharedModule } from "./../../shared/shared.module";
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { IonicModule } from "@ionic/angular";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { RouterModule } from "@angular/router";
-
-import { HomePage } from "./home.page";
-import { FlightsComponent } from "./components/flights/flights.component";
+import { FlightListComponent } from "./components/flight-list/flight-list.component";
 
 @NgModule({
   imports: [
@@ -20,10 +19,16 @@ import { FlightsComponent } from "./components/flights/flights.component";
     RouterModule.forChild([
       {
         path: "",
-        component: HomePage
+        component: SearchPage
       }
     ])
   ],
-  declarations: [HomePage, FlightsComponent]
+  declarations: [
+    SearchPage,
+    FiltersComponent,
+    SortComponent,
+    FlightListComponent
+  ],
+  entryComponents: [FiltersComponent, SortComponent]
 })
-export class HomePageModule {}
+export class SearchPageModule {}

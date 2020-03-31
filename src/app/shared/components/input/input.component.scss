@@ -12,22 +12,26 @@
   outline: none;
   box-sizing: content-box;
   border-radius: 8px;
-  color: #333;
+  color: var(--ion-color-medium-shade);
   font-size: 16px;
   height: 28px;
   width: 100%;
   padding: 13px 15px;
   z-index: 1;
-  border: 1px solid #333;
+  border: 1px solid var(--ion-color-medium-shade);
 
   &:focus + .trav-input__label {
-    transform: scale(0.75) translateY(-39px);
+    transform: scale(0.85) translateY(-36px);
   }
+}
+
+.trav-input__focus {
+  transform: scale(0.85) translateY(-36px);
 }
 
 .trav-input__label {
   transition-property: color, bottom, transform;
-  color: #333;
+  color: var(--ion-color-medium-shade);
   pointer-events: none;
   position: absolute;
   bottom: 3px;
@@ -35,6 +39,7 @@
   bottom: 18px;
   box-sizing: border-box;
   left: 8px;
+  font-size: 14px;
   overflow: hidden;
   padding: 0 8px;
   text-overflow: ellipsis;

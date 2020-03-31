@@ -16,6 +16,16 @@
   width: auto;
 
   overflow-x: auto;
+  top: 44px;
+
+  z-index: 10;
+}
+
+:host(.tab-bar-fixed) {
+  position: fixed;
+  width: 100%;
+  padding-bottom: 2px;
+  background: white;
 }
 
 :host(.tab-bar-disabled),

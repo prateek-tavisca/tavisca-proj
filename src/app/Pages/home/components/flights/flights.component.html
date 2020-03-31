@@ -1,23 +1,96 @@
 <form [formGroup]="flightForm" (ngSubmit)="onSubmit(flightForm)">
-  <trav-input formControlName="departure" label="Departure"></trav-input>
-  <trav-input formControlName="destination" label="Destination"></trav-input>
-  <div class="d-flex flex-item-center">
+  <div class="Departure--container">
     <trav-input
-      formControlName="departDate"
-      label="Departure Date"
+      formControlName="departure"
+      label="Departure"
+      (input)="searchDeparture($event)"
+      [isListBox]="true"
+      listId="cityList1"
     ></trav-input>
-    <trav-input formControlName="returnDate" label="Return Date"></trav-input>
+    <ul
+      id="cityList1"
+      class="SearchList"
+      *ngIf="departSearch$ | async as result"
+      role="listbox"
+    >
+      <li
+        (click)="setValue(item, 'departure')"
+        role="option"
+        id="cityList2-{{ item.code }}"
+        *ngFor="let item of result"
+      >
+        {{ itemString(item) }}
+      </li>
+    </ul>
   </div>
-
+  <div class="Departure--container">
+    <trav-input
+      formControlName="destination"
+      label="Destination"
+      (input)="searchDest($event)"
+      [isListBox]="true"
+      listId="cityList2"
+    ></trav-input>
+    <ul
+      id="cityList2"
+      class="SearchList"
+      *ngIf="destSearch$ | async as result"
+      role="listbox"
+    >
+      <li
+        (click)="setValue(item, 'destination')"
+        role="option"
+        id="cityList2-{{ item.code }}"
+        *ngFor="let item of result"
+      >
+        {{ itemString(item) }}
+      </li>
+    </ul>
+  </div>
+  <!-- <trav-input formControlName="destination" label="Destination"></trav-input> -->
+  <div class="d-flex flex-item-center">
+    <button class="trans-button" (click)="openPicker($event, departDate)">
+      <trav-input formControlName="departDate" label="Depart Date"></trav-input>
+      <ion-datetime
+        (ionChange)="departDateChange(departDate)"
+        #departDate
+        displayFormat="DDD, MMM YY"
+        class="d-none"
+      ></ion-datetime>
+    </button>
+    <button class="trans-button" (click)="openPicker($event, returnDatePicker)">
+      <trav-input formControlName="returnDate" label="Return Date"></trav-input>
+      <ion-datetime
+        (ionChange)="returnDateChange(returnDatePicker)"
+        #returnDatePicker
+        displayFormat="DDD, MMM YY"
+        class="d-none"
+      ></ion-datetime>
+    </button>
+  </div>
   <trav-input formControlName="travelers" label="Traveler"></trav-input>
-  <trav-input formControlName="travelClass" label="Class"></trav-input>
+  <button type="button" class="traveler-class">
+    <span class="traveler-class--label">Class</span>
+
+    <ion-select
+      #travelClass
+      formControlName="travelClass"
+      interface="action-sheet"
+      class="traveler-class--select"
+    >
+      <ion-select-option value="Economy">Economy</ion-select-option>
+      <ion-select-option value="Premium Economy"
+        >Premium Economy</ion-select-option
+      >
+      <ion-select-option value="Bussiness">Bussiness</ion-select-option>
+    </ion-select>
+  </button>
   <ion-button
-    class="flight-submit"
     expand="block"
     [disabled]="flightForm.valid"
     type="submit"
-    class="btn btn-primary"
+    class="btn btn-primary flight-submit"
   >
-    Primary
+    Search Flight
   </ion-button>
 </form>

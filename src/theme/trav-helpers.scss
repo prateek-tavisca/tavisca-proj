@@ -1,0 +1,143 @@
+@import "./trav-mixins";
+
+// Element Space
+// --------------------------------------------------
+// Creates padding and margin attributes to be used on
+// any element
+
+$padding: var(--trav-padding, 16px);
+$margin: var(--trav-margin, 16px);
+
+// Padding
+// --------------------------------------------------
+
+.trav-no-padding,
+[no-padding] {
+  --padding-start: 0;
+  --padding-end: 0;
+  --padding-top: 0;
+  --padding-bottom: 0;
+
+  @include trav-padding(0);
+}
+
+.trav-padding,
+[padding] {
+  --padding-start: #{$padding};
+  --padding-end: #{$padding};
+  --padding-top: #{$padding};
+  --padding-bottom: #{$padding};
+
+  @include trav-padding($padding);
+}
+
+.trav-padding-top,
+[padding-top] {
+  --padding-top: #{$padding};
+
+  @include trav-padding($padding, null, null, null);
+}
+
+.trav-padding-start,
+[padding-start] {
+  --padding-start: #{$padding};
+
+  @include trav-padding-horizontal($padding, null);
+}
+
+.trav-padding-end,
+[padding-end] {
+  --padding-end: #{$padding};
+
+  @include trav-padding-horizontal(null, $padding);
+}
+
+.trav-padding-bottom,
+[padding-bottom] {
+  --padding-bottom: #{$padding};
+
+  @include trav-padding(null, null, $padding, null);
+}
+
+.trav-padding-vertical,
+[padding-vertical] {
+  --padding-top: #{$padding};
+  --padding-bottom: #{$padding};
+
+  @include trav-padding($padding, null, $padding, null);
+}
+
+.trav-padding-horizontal,
+[padding-horizontal] {
+  --padding-start: #{$padding};
+  --padding-end: #{$padding};
+
+  @include trav-padding-horizontal($padding);
+}
+
+// Margin
+// --------------------------------------------------
+
+.trav-no-margin,
+[no-margin] {
+  --margin-start: 0;
+  --margin-end: 0;
+  --margin-top: 0;
+  --margin-bottom: 0;
+
+  @include trav-margin(0);
+}
+
+.trav-margin,
+[margin] {
+  --margin-start: #{$margin};
+  --margin-end: #{$margin};
+  --margin-top: #{$margin};
+  --margin-bottom: #{$margin};
+
+  @include trav-margin($margin);
+}
+
+.trav-margin-top,
+[margin-top] {
+  --margin-top: #{$margin};
+
+  @include trav-margin($margin, null, null, null);
+}
+
+.trav-margin-start,
+[margin-start] {
+  --margin-start: #{$margin};
+
+  @include trav-margin-horizontal($margin, null);
+}
+
+.trav-margin-end,
+[margin-end] {
+  --margin-end: #{$margin};
+
+  @include trav-margin-horizontal(null, $margin);
+}
+
+.trav-margin-bottom,
+[margin-bottom] {
+  --margin-bottom: #{$margin};
+
+  @include trav-margin(null, null, $margin, null);
+}
+
+.trav-margin-vertical,
+[margin-vertical] {
+  --margin-top: #{$margin};
+  --margin-bottom: #{$margin};
+
+  @include trav-margin($margin, null, $margin, null);
+}
+
+.trav-margin-horizontal,
+[margin-horizontal] {
+  --margin-start: #{$margin};
+  --margin-end: #{$margin};
+
+  @include trav-margin-horizontal($margin);
+}

@@ -1,13 +1,11 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      CxLoyalty
-    </ion-title>
+    <ion-title> <span>cx</span>Loyalty</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="mt-10 home-page">
+<ion-content class="ion-content">
+  <div class="mt-10 home-page ion-inner-content">
     <trav-tab-bar
       [(ngModel)]="segment"
       (tabChanged)="onTabChange($event)"

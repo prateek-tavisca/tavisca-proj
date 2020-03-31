@@ -4,7 +4,12 @@ import {
   OnInit,
   Input,
   ViewEncapsulation,
-  forwardRef
+  forwardRef,
+  Output,
+  EventEmitter,
+  ViewChild,
+  ElementRef,
+  Renderer2
 } from "@angular/core";
 
 @Component({
@@ -24,10 +29,15 @@ import {
   ]
 })
 export class InputComponent implements OnInit {
+  @ViewChild("inputLable", { static: true }) inputLabel: ElementRef;
   @Input() label: string;
   @Input() type: inputType = "text";
   @Input() value: string;
   @Input() disabled = false;
+  @Output() input = new EventEmitter<MouseEvent>();
+  @Output() change = new EventEmitter<MouseEvent>();
+  @Input() isListBox = false;
+  @Input() listId: string;
 
   // Function to call when the rating changes.
   onChange = (val: string) => {};
@@ -38,8 +48,12 @@ export class InputComponent implements OnInit {
   // Allows Angular to update the model (rating).
   // Update the model and changes needed for the view here.
   writeValue(val: string): void {
-    if (val !== this.value) {
+    if (!!val) {
       this.value = val;
+      this.renderer.addClass(
+        this.inputLabel.nativeElement,
+        "trav-input__focus"
+      );
       this.onChange(this.value);
     }
   }
@@ -61,12 +75,28 @@ export class InputComponent implements OnInit {
     this.disabled = isDisabled;
   }
 
-  constructor() {}
+  constructor(private renderer: Renderer2) {}
 
-  ngOnInit() {}
-
+  ngOnInit() {
+    console.log(this.inputLabel);
+  }
+  onInput(event) {
+    // event.preventDefault();
+    this.onChangeFn(event);
+    this.input.emit(event);
+  }
+  changeFn(event) {
+    this.onChangeFn(event);
+    this.change.emit(event);
+  }
   onChangeFn(event) {
     this.writeValue(event.target.value);
+  }
+
+  ngAfterContentInit(): void {
+    //Called after ngOnInit when the component's or directive's content has been initialized.
+    //Add 'implements AfterContentInit' to the class.
+    console.log(this.label);
   }
 }
 

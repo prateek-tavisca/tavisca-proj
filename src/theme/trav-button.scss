@@ -1,0 +1,22 @@
+$background: var(--trav-btn-primary-color);
+$color: var(--ion-color-light-tint);
+
+.btn.btn-primary {
+  --background: #{$background};
+  --border-radius: 4px;
+  --background-activated: #{$background};
+  --color: #{$color};
+  --color-activate: #{$color};
+}
+
+.trans-button {
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+.button.in-toolbar.button-clear {
+  --color: var(--ion-color-light-tint);
+  width: 28px;
+  height: 28px;
+}

@@ -1,6 +1,7 @@
 :host {
   display: block;
   padding: 15px;
+  margin-top: 15px;
 }
 trav-input {
   margin-bottom: 20px;
@@ -12,15 +13,76 @@ trav-input {
 .d-flex {
   display: flex;
   margin-bottom: 20px;
-  trav-input {
-    flex: 1 0;
-    margin-bottom: 0px;
-    &:first-of-type {
-      margin-right: 20px;
-    }
-  }
 }
 
 ion-button {
   --background: var(--trav-submit-button-color);
+  --border-radius: 4px;
+  margin-top: 15px;
+}
+
+.d-none {
+  display: none;
+}
+
+.trans-button {
+  flex: 1 0;
+  margin-bottom: 0px;
+  padding: 0px;
+  &:first-of-type {
+    margin-right: 20px;
+  }
+}
+
+.traveler-class {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: 1px solid var(--ion-color-medium-shade);
+  color: var(--ion-color-medium-shade);
+  border-radius: 8px;
+  position: relative;
+  margin: 20px 0px;
+  &--label {
+    position: absolute;
+    z-index: 1;
+    background: white;
+    top: -6px;
+  }
+  &--select {
+    height: 56px;
+    box-sizing: border-box;
+  }
+}
+.Departure--container {
+  position: relative;
+}
+.SearchList {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  color: #666;
+  line-height: 1;
+  color: #333;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: #fff;
+  border: 1px solid;
+  border-color: #cbcfe2 #c8cee7 #c4c7d7;
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  li {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 7px 10px;
+    border-bottom: 1px solid #e6e6e6;
+    cursor: pointer;
+  }
 }

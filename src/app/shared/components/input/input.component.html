@@ -7,12 +7,17 @@
     tabindex="0"
     [attr.aria-label]="label"
     name="identifier"
-    value=""
+    [(ngModel)]="value"
     autocapitalize="none"
     id="identifierId"
-    (input)="onChangeFn($event)"
-    (change)="onChangeFn($event)"
+    (input)="onInput($event)"
+    (change)="changeFn($event)"
     (blur)="onTouched()"
+    [attr.aria-autocomplete]="isListBox ? 'list' : ''"
+    [attr.aria-owns]="isListBox ? listId : ''"
+    [attr.role]="isListBox ? 'combobox' : ''"
   />
-  <label class="trav-input__label" aria-hidden="true">{{ label }}</label>
+  <label #inputLable class="trav-input__label" aria-hidden="true">{{
+    label
+  }}</label>
 </div>

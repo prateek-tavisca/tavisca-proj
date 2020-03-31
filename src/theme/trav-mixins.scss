@@ -1,0 +1,21 @@
+// Add property for all directions
+// @param {string} $prop
+// @param {string} $top
+// @param {string} $end
+// @param {string} $bottom
+// @param {string} $start
+// ----------------------------------------------------------
+@mixin trav-property($prop, $top, $end: $top, $bottom: $top, $start: $end) {
+  #{$prop}-top: $top;
+  #{$prop}-bottom: $bottom;
+  #{$prop}-left: $start;
+  #{$prop}-right: $end;
+}
+
+@mixin trav-padding($top, $end: $top, $bottom: $top, $start: $end) {
+  @include property(padding, $top, $end, $bottom, $start);
+}
+
+@mixin trav-margin($top, $end: $top, $bottom: $top, $start: $end) {
+  @include property(margin, $top, $end, $bottom, $start);
+}
