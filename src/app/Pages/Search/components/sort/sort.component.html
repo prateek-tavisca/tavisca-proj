@@ -10,30 +10,26 @@
 </ion-header>
 
 <ion-content>
-  <form>
-    <ion-radio-group [formControl]="price" name="price">
-      <ion-item lines="none">
-        <ion-label>Price (Lowest to Highest)</ion-label>
-        <ion-radio slot="start" value="price-asc" mode="md"></ion-radio>
-      </ion-item>
+  <ion-radio-group [formControl]="sort" name="sort">
+    <ion-item lines="none">
+      <ion-label>Price (Lowest to Highest)</ion-label>
+      <ion-radio slot="start" value="price-asc" mode="md"></ion-radio>
+    </ion-item>
 
-      <ion-item lines="none">
-        <ion-label>Price (Highest to Lowest)</ion-label>
-        <ion-radio slot="start" value="price-desc" mode="md"></ion-radio>
-      </ion-item>
-    </ion-radio-group>
-    <ion-radio-group [formControl]="duration" name="duration">
-      <ion-item lines="none">
-        <ion-label>Duration (Shortest to Longest)</ion-label>
-        <ion-radio slot="start" value="duration-asc" mode="md"></ion-radio>
-      </ion-item>
+    <ion-item lines="none">
+      <ion-label>Price (Highest to Lowest)</ion-label>
+      <ion-radio slot="start" value="price-desc" mode="md"></ion-radio>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label>Duration (Shortest to Longest)</ion-label>
+      <ion-radio slot="start" value="duration-asc" mode="md"></ion-radio>
+    </ion-item>
 
-      <ion-item lines="none">
-        <ion-label>Duration (Longest to Shortest)</ion-label>
-        <ion-radio slot="start" value="duration-desc" mode="md"></ion-radio>
-      </ion-item>
-    </ion-radio-group>
-  </form>
+    <ion-item lines="none">
+      <ion-label>Duration (Longest to Shortest)</ion-label>
+      <ion-radio slot="start" value="duration-desc" mode="md"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
   <ion-button
     (click)="onSubmit()"
     expand="block"

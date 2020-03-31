@@ -1,7 +1,51 @@
-<ion-card class="trav-card">
-  <ng-content #header></ng-content>
-  <div>
-    <ion-icon name="wifi" src="./assets/icon/airplane-outline.svg"></ion-icon>
-    <ion-label>Card Link Item 1 activated</ion-label>
+<div *ngIf="updatedFlight">
+  <div class="header">
+    <ion-icon class="airline-icon" [src]="src"></ion-icon>
+    <label for="">{{ updatedFlight.airline_name }}</label>
   </div>
-</ion-card>
+  <div class="updatedFlight-details">
+    <div class="updatedFlight-details--info arrival-info">
+      <label for="" class="departure-time f-w-bold">{{
+        updatedFlight.departure_time | date: "shortTime"
+      }}</label
+      ><label for="" class="departure-city-code">{{
+        updatedFlight.departure_code
+      }}</label>
+    </div>
+    <div class="updatedFlight-details--info stop-duration-info">
+      <label for="" class="estimate-time">{{ timeString }}</label>
+      <div class="stop-ui">
+        <label class="stop"></label>
+        <label
+          class="stop"
+          *ngFor="let stop of updatedFlight.stops; let i = index"
+          [ngStyle]="{ 'left.%': 100 / (i + 2) }"
+        ></label>
+        <label class="stop"></label>
+      </div>
+      <label for="" *ngIf="updatedFlight.stops" class="stop-text">{{
+        updatedFlight.stops.length + " Stop (ADD)"
+      }}</label>
+    </div>
+    <div class="updatedFlight-details--info departure-info">
+      <label for="" class="arrival-time f-w-bold">{{
+        updatedFlight.arrival_time | date: "shortTime"
+      }}</label
+      ><label for="" class="arrival-code">{{
+        updatedFlight.arrival_code
+      }}</label>
+    </div>
+  </div>
+  <div *ngIf="updatedFlight.fares as fares" class="fares-info">
+    <ion-card
+      [ngClass]="{
+        'best-fare': fare.description === updatedFlight.best_fare.description
+      }"
+      class="fare-card"
+      *ngFor="let fare of fares"
+    >
+      <label for="price" class="fare-price">{{ fare.price }}</label>
+      <label for="price-desccription">{{ fare.description }}</label>
+    </ion-card>
+  </div>
+</div>

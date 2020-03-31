@@ -14,8 +14,8 @@ export class FiltersComponent implements OnInit {
   constructor(public modal: ModalController) {}
 
   ngOnInit() {
-    this.price = new FormControl(["", null]);
-    this.duration = new FormControl(["", null]);
+    this.price = new FormControl([""]);
+    this.duration = new FormControl([""]);
   }
 
   goBack() {

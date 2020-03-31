@@ -19,11 +19,11 @@ export class HomeDataService {
   private _state$: BehaviorSubject<HomePageState>;
   public state$: Observable<HomePageState>;
 
-  get state(): HomePageState {
+  private get state(): HomePageState {
     return this._state$.getValue();
   }
 
-  setState(nextState: HomePageState): void {
+  private setState(nextState: HomePageState): void {
     this._state$.next(nextState);
   }
 

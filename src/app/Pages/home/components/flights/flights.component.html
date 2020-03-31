@@ -1,6 +1,7 @@
 <form [formGroup]="flightForm" (ngSubmit)="onSubmit(flightForm)">
   <div class="Departure--container">
     <trav-input
+      class="no-margin"
       formControlName="departure"
       label="Departure"
       (input)="searchDeparture($event)"
@@ -25,6 +26,7 @@
   </div>
   <div class="Departure--container">
     <trav-input
+      class="no-margin"
       formControlName="destination"
       label="Destination"
       (input)="searchDest($event)"
@@ -56,11 +58,13 @@
         #departDate
         displayFormat="DDD, MMM YY"
         class="d-none"
+        [min]="min"
       ></ion-datetime>
     </button>
     <button class="trans-button" (click)="openPicker($event, returnDatePicker)">
       <trav-input formControlName="returnDate" label="Return Date"></trav-input>
       <ion-datetime
+        [min]="min"
         (ionChange)="returnDateChange(returnDatePicker)"
         #returnDatePicker
         displayFormat="DDD, MMM YY"
@@ -68,26 +72,30 @@
       ></ion-datetime>
     </button>
   </div>
-  <trav-input formControlName="travelers" label="Traveler"></trav-input>
-  <button type="button" class="traveler-class">
-    <span class="traveler-class--label">Class</span>
+  <div class="d-flex flex-item-center">
+    <button type="button" class="traveler-button" (click)="openModal($event)">
+      <trav-input formControlName="travelers" label="Traveler"></trav-input>
+    </button>
+    <button type="button" class="traveler-class">
+      <span class="traveler-class--label">Class</span>
 
-    <ion-select
-      #travelClass
-      formControlName="travelClass"
-      interface="action-sheet"
-      class="traveler-class--select"
-    >
-      <ion-select-option value="Economy">Economy</ion-select-option>
-      <ion-select-option value="Premium Economy"
-        >Premium Economy</ion-select-option
+      <ion-select
+        #travelClass
+        formControlName="travelClass"
+        interface="action-sheet"
+        class="traveler-class--select"
       >
-      <ion-select-option value="Bussiness">Bussiness</ion-select-option>
-    </ion-select>
-  </button>
+        <ion-select-option value="Economy">Economy</ion-select-option>
+        <ion-select-option value="Premium Economy"
+          >Premium Economy</ion-select-option
+        >
+        <ion-select-option value="Bussiness">Bussiness</ion-select-option>
+      </ion-select>
+    </button>
+  </div>
   <ion-button
     expand="block"
-    [disabled]="flightForm.valid"
+    [disabled]="!flightForm.valid"
     type="submit"
     class="btn btn-primary flight-submit"
   >

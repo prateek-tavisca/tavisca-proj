@@ -1,14 +1,14 @@
-import { HomePage } from "./../../home.page";
-import { map, tap } from "rxjs/operators";
+import { map } from "rxjs/operators";
 import { HomePageData } from "./../../../../shared/interface";
 import { Observable, of } from "rxjs";
 import { HomeDataService } from "./../../services/home-data.service";
 import { Component, OnInit } from "@angular/core";
 import { FormGroup, FormBuilder, Validators } from "@angular/forms";
-import { IonDatetime } from "@ionic/angular";
+import { IonDatetime, ModalController } from "@ionic/angular";
 import { DatePipe } from "@angular/common";
 import { Router } from "@angular/router";
 import { filter } from "rxjs/operators";
+import { TravellerComponent } from "../traveller/traveller.component";
 
 @Component({
   selector: "trav-flights",
@@ -22,13 +22,18 @@ export class FlightsComponent implements OnInit {
   timeout;
   departVal: HomePageData;
   destVal: HomePageData;
+  departDateVal: string;
+  returnDateVal: string;
   departSearch$: Observable<HomePageData[]>;
+  travelerData = { adult: 1, child: 0, infant: 0 };
+  min = new Date().toISOString();
 
   constructor(
     private form: FormBuilder,
     private datepipe: DatePipe,
     private router: Router,
-    private homeDataServ: HomeDataService
+    private homeDataServ: HomeDataService,
+    private modal: ModalController
   ) {}
 
   ngOnInit() {
@@ -37,7 +42,7 @@ export class FlightsComponent implements OnInit {
       destination: ["", Validators.compose([Validators.required])],
       departDate: ["", Validators.compose([Validators.required])],
       returnDate: ["", Validators.compose([Validators.required])],
-      travelers: ["", Validators.compose([Validators.required])],
+      travelers: ["1 Adult", Validators.compose([Validators.required])],
       travelClass: ["Economy", Validators.compose([Validators.required])]
     });
     this.homeDataServ.homeStoreData$;
@@ -50,18 +55,29 @@ export class FlightsComponent implements OnInit {
   }
 
   departDateChange(datepicker: IonDatetime) {
-    const dateString = this.datepipe.transform(datepicker.value, "E, MMM yy");
+    this.departDateVal = datepicker.value;
+    const dateString = this.datepipe.transform(datepicker.value, "E, MMM dd");
     this.flightForm.controls.departDate.patchValue(dateString);
   }
 
   returnDateChange(datepicker: IonDatetime) {
-    const dateString = this.datepipe.transform(datepicker.value, "E, MMM yy");
+    this.returnDateVal = datepicker.value;
+    const dateString = this.datepipe.transform(datepicker.value, "E, MMM dd");
     this.flightForm.controls.returnDate.patchValue(dateString);
   }
 
   onSubmit(form: FormGroup) {
-    console.log(form.value);
-    this.router.navigate(["/search"]);
+    const formData = {
+      departure: this.departVal.city_code,
+      destination: this.destVal.city_code,
+      departDate: this.departDateVal,
+      returenDate: this.returnDateVal,
+      travelers: this.travelerData,
+      travelClass: this.flightForm.controls.travelClass.value
+    };
+    this.router.navigate(["/search"], {
+      queryParams: { data: JSON.stringify(formData) }
+    });
   }
 
   // searchDeparture(event) {
@@ -121,9 +137,37 @@ export class FlightsComponent implements OnInit {
 
   setValue(item, control) {
     this.flightForm.get(control).patchValue(this.itemString(item));
-    this.departVal = item;
-    if (control == "destination") this.destSearch$ = of(null);
-    else this.departSearch$ = of(null);
+    if (control == "destination") {
+      this.destSearch$ = of(null);
+      this.destVal = item;
+    } else {
+      this.departVal = item;
+      this.departSearch$ = of(null);
+    }
     this.flightForm.get(control).updateValueAndValidity();
+  }
+
+  async openModal(event) {
+    const modal = await this.modal.create({
+      component: TravellerComponent,
+      componentProps: {
+        ...this.travelerData
+      }
+    });
+    await modal.present();
+    this.onModalDismiss(modal);
+    return modal;
+  }
+
+  onModalDismiss(modal: HTMLIonModalElement, isSort = false) {
+    modal.onDidDismiss().then(result => {
+      this.travelerData = result.data;
+      const { adult, infant, child } = this.travelerData;
+      let formString = "";
+      if (adult) formString += `${adult} Adult`;
+      if (child) formString += `,${child} Child,`;
+      if (infant) formString += `,${child} Infant`;
+      this.flightForm.controls.travelers.patchValue(formString);
+    });
   }
 }

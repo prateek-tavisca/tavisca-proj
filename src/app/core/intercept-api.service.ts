@@ -10,6 +10,7 @@ import { Observable, of } from "rxjs";
 import * as airports from "./../../assets/apis-json/airports.json";
 import * as cities from "./../../assets/apis-json/cities.json";
 import * as countries from "./../../assets/apis-json/countries.json";
+import * as flights from "./../../assets/apis-json/flights.json";
 
 const urls = [
   {
@@ -23,6 +24,10 @@ const urls = [
   {
     url: "http://localhost:3000/assets/apis-json/countries",
     json: countries
+  },
+  {
+    url: "http://localhost:3000/assets/apis-json/flights",
+    json: flights
   }
 ];
 

@@ -1,0 +1,112 @@
+[
+  {
+    "departure_code": "PUN",
+    "arrival_code": "BOM",
+    "departure_time": "2014-01-24T22:15:00+10:00",
+    "arrival_time": "2014-01-25T05:00:00+08:00",
+    "designator_code": "CZ302",
+    "airline_code": "CZ",
+    "departure_name": "Sydney",
+    "arrival_name": "Guangzhou",
+    "airline_name": "China Southern Airlines",
+    "airline_logo": "emirates",
+    "stops": "2",
+    "fares": [
+      {
+        "price": 2285.54,
+        "description": "Economy",
+        "route": "SYD-LHR",
+        "seats_left": "45 seats"
+      },
+      {
+        "price": 3025.54,
+        "description": "Bussiness",
+        "route": "SYD-LHR",
+        "seats_left": "45 seats"
+      },
+      {
+        "price": 4085.54,
+        "description": "Premium Bussiness",
+        "route": "SYD-LHR",
+        "seats_left": "45 seats"
+      }
+    ],
+    "best_fare": {
+      "price": 5000.54,
+      "description": "Economy"
+    }
+  },
+  {
+    "departure_code": "PUN",
+    "arrival_code": "BOM",
+    "departure_time": "2014-01-25T09:30:00+08:00",
+    "arrival_time": "2014-01-25T14:50:00+00:00",
+    "designator_code": "CZ303",
+    "airline_code": "CZ",
+    "departure_name": "Guangzhou",
+    "arrival_name": "London Heathrow Apt",
+    "airline_name": "China Southern Airlines",
+    "airline_logo": "emirates",
+    "stops": "1",
+    "fares": [
+      {
+        "price": 2285.54,
+        "description": "Economy",
+        "route": "SYD-LHR",
+        "seats_left": "45 seats"
+      }
+    ],
+    "best_fare": {
+      "price": 2285.54,
+      "description": "Economy"
+    }
+  },
+  {
+    "departure_code": "PUN",
+    "arrival_code": "BOM",
+    "departure_time": "2014-01-29T22:30:00+00:00",
+    "arrival_time": "2014-01-30T18:30:00+08:00",
+    "designator_code": "CZ304",
+    "airline_code": "CZ",
+    "departure_name": "London Heathrow Apt",
+    "arrival_name": "Guangzhou",
+    "airline_name": "China Southern Airlines",
+    "airline_logo": "emirates",
+    "fares": [
+      {
+        "price": 3005.54,
+        "description": "Economy",
+        "route": "SYD-LHR",
+        "seats_left": "45 seats"
+      }
+    ],
+    "best_fare": {
+      "price": 3005.54,
+      "description": "Economy"
+    }
+  },
+  {
+    "departure_code": "PUN",
+    "arrival_code": "BOM",
+    "departure_time": "2014-01-31T08:20:00+08:00",
+    "arrival_time": "2014-01-31T20:40:00+10:00",
+    "designator_code": "CZ301",
+    "airline_code": "CZ",
+    "departure_name": "Guangzhou",
+    "arrival_name": "Sydney",
+    "airline_name": "China Southern Airlines",
+    "airline_logo": "emirates",
+    "fares": [
+      {
+        "price": 2285.54,
+        "description": "Economy",
+        "route": "SYD-LHR",
+        "seats_left": "45 seats"
+      }
+    ],
+    "best_fare": {
+      "price": 4085.54,
+      "description": "Economy"
+    }
+  }
+]

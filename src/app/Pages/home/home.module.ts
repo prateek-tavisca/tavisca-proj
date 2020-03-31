@@ -1,3 +1,4 @@
+import { TravellerComponent } from "./components/traveller/traveller.component";
 import { HomeDataService } from "./services/home-data.service";
 import { HomeRestApiService } from "./services/home-rest.service";
 import { SharedModule } from "./../../shared/shared.module";
@@ -24,6 +25,7 @@ import { FlightsComponent } from "./components/flights/flights.component";
       }
     ])
   ],
-  declarations: [HomePage, FlightsComponent]
+  declarations: [HomePage, FlightsComponent, TravellerComponent],
+  entryComponents: [TravellerComponent]
 })
 export class HomePageModule {}

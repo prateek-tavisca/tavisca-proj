@@ -1,0 +1,49 @@
+.filter-submit {
+  position: absolute;
+  width: calc(100% - 40px);
+  bottom: 20px;
+  padding: 0px 20px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  border: 0px;
+  border-bottom: 1px solid var(--ion-color-medium-tint);
+  margin: 10px 10px 0px;
+
+  label {
+    flex: 1;
+    color: var(--ion-color-medium-tint);
+    .age-range {
+      display: block;
+    }
+  }
+
+  .counter-button {
+    display: flex;
+    width: 40%;
+    ion-input {
+      text-align: center;
+    }
+    ion-button {
+      width: 35px;
+      height: 35px;
+      --border-width: 2px;
+      --background: #a8eaf294;
+      --background-focused: #a8eaf294;
+      --background-activated: #a8eaf294;
+      --color: #50c8ff;
+      --box-shadow: none;
+      font-weight: 700;
+      font-size: 16px;
+      --transition: none;
+      transform: none;
+      --transform: none;
+      &:last-of-type {
+        --padding-bottom: 2px;
+      }
+    }
+  }
+}

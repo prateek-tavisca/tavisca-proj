@@ -3,7 +3,7 @@
   padding: 15px;
   margin-top: 15px;
 }
-trav-input {
+trav-input:not(.no-margin) {
   margin-bottom: 20px;
   &:last-of-type {
     margin-bottom: 0px;
@@ -15,8 +15,8 @@ trav-input {
   margin-bottom: 20px;
 }
 
-ion-button {
-  --background: var(--trav-submit-button-color);
+.flight-submit {
+  // --background: var(--trav-submit-button-color);
   --border-radius: 4px;
   margin-top: 15px;
 }
@@ -35,27 +35,27 @@ ion-button {
 }
 
 .traveler-class {
-  width: 100%;
+  width: 50%;
   text-align: left;
   background: transparent;
   border: 1px solid var(--ion-color-medium-shade);
   color: var(--ion-color-medium-shade);
   border-radius: 8px;
   position: relative;
-  margin: 20px 0px;
   &--label {
     position: absolute;
     z-index: 1;
     background: white;
     top: -6px;
+    padding: 0 2px;
   }
   &--select {
-    height: 56px;
     box-sizing: border-box;
   }
 }
 .Departure--container {
   position: relative;
+  margin-bottom: 20px;
 }
 .SearchList {
   list-style: none;
@@ -72,10 +72,7 @@ ion-button {
   border: 1px solid;
   border-color: #cbcfe2 #c8cee7 #c4c7d7;
   border-radius: 1px;
-  -webkit-border-radius: 1px;
-  -moz-border-radius: 1px;
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   li {
     display: block;
@@ -85,4 +82,12 @@ ion-button {
     border-bottom: 1px solid #e6e6e6;
     cursor: pointer;
   }
+}
+
+.traveler-button {
+  background: transparent;
+  padding: 0px;
+  flex: 1 1 auto;
+  width: 50%;
+  margin-right: 20px;
 }
