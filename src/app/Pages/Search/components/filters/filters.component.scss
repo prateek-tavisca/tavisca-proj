@@ -1,6 +1,50 @@
 .filter-submit {
-  position: absolute;
-  width: calc(100% - 40px);
-  bottom: 20px;
-  padding: 0px 20px;
+  // position: absolute;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.range-input {
+  display: flex;
+}
+.marg-right {
+  margin-right: 20px;
+}
+
+.range {
+  --knob-background: var(--ion-color-primary);
+  --knob-size: 20px;
+}
+.class-input {
+  --padding-end: 0;
+  --padding-start: 0;
+  --inner-padding-end: 0;
+}
+
+.class-check {
+  margin: 0px;
+  margin-right: 10px;
+}
+.text-r-align {
+  margin: 0px;
+  text-align: right;
+}
+
+.toolbar-no-color {
+  --ion-color-base: white !important;
+}
+.class-label {
+  padding-bottom: 20px;
+  border-bottom: 1px solid grey;
+  display: block;
+}
+
+.filter-card-header {
+  border-bottom: 1px solid grey;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+ion-content {
+  --background: var(--ion-color-light-shade);
 }

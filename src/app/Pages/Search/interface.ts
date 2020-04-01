@@ -6,6 +6,7 @@ export interface Fare {
 }
 
 export interface Flight {
+  flight_id: string;
   departure_code: string;
   arrival_code: string;
   departure_time: string;

@@ -9,6 +9,9 @@
 .country-arrow {
   transform: rotate(180deg);
 }
+.back {
+  position: absolute;
+}
 .segment {
   display: flex;
   position: fixed;
@@ -17,6 +20,7 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
+  width: 75%;
   button {
     flex: 1;
     width: 150px;
@@ -29,6 +33,7 @@
     color: #327eff;
     background: white;
     font-weight: bold;
+    width: 50%;
     &:first-of-type {
       border-top-left-radius: 4px;
       border-bottom-left-radius: 4px;
@@ -41,4 +46,16 @@
 }
 ion-content {
   --background: var(--ion-color-light-shade);
+  --padding-bottom: 60px;
+}
+.search-details {
+  font-size: 12px;
+  text-align: center;
+  .country {
+    display: flex;
+    justify-content: center;
+    ion-icon {
+      margin: 0px 5px;
+    }
+  }
 }

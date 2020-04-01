@@ -1,4 +1,4 @@
-import { Flight } from "./interface";
+import { Flight, Fare } from "./interface";
 import { filter } from "rxjs/operators";
 import { SearchDataStoreService } from "./services/search-data-store.service";
 import { SortComponent } from "./components/sort/sort.component";
@@ -6,6 +6,7 @@ import { FiltersComponent } from "./components/filters/filters.component";
 import { Component, OnInit } from "@angular/core";
 import { Router, ActivatedRoute } from "@angular/router";
 import { ModalController, NavController } from "@ionic/angular";
+import { iif } from "rxjs";
 
 @Component({
   selector: "app-search",
@@ -15,7 +16,10 @@ import { ModalController, NavController } from "@ionic/angular";
 export class SearchPage implements OnInit {
   homeData;
   flights;
+  flightsCopy;
   SelectedSortCriteria: string;
+  travelers;
+  priceFilter: any;
   constructor(
     public router: Router,
     public activeRoute: ActivatedRoute,
@@ -27,21 +31,29 @@ export class SearchPage implements OnInit {
   ngOnInit(): void {
     const { data } = this.activeRoute.snapshot.queryParams;
     this.homeData = JSON.parse(data);
+    const { adult, child, infant } = this.homeData.travelers;
+    this.travelers = "";
+    if (adult) this.travelers += `${adult} Adult`;
+    if (child) this.travelers += `${child} Child,`;
+    if (infant) this.travelers += `${child} Infant`;
+    // this.travelers = `${adult} Adult ${child} Child ${infant} Infant`;
     this.searchData.getFlights(this.homeData);
-    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-    //Add 'implements OnInit' to the class.
-    this.searchData.state$.subscribe(data => (this.flights = data.flights));
+
+    this.searchData.state$.subscribe(data => {
+      this.flights = data.flights;
+      this.flightsCopy = this.flights;
+    });
   }
   openFilterModal() {
-    const filtermodal = this.presentModal(
-      FiltersComponent,
-      this.SelectedSortCriteria
-    );
+    const filtermodal = this.presentModal(FiltersComponent, this.priceFilter);
     this.onModalDismiss(filtermodal);
   }
 
   openSortModal() {
-    const sortModal = this.presentModal(SortComponent);
+    const sortModal = this.presentModal(
+      SortComponent,
+      this.SelectedSortCriteria
+    );
     this.onModalDismiss(sortModal, true);
   }
 
@@ -58,9 +70,8 @@ export class SearchPage implements OnInit {
 
   async onModalDismiss(modal: Promise<HTMLIonModalElement>, isSort = false) {
     (await modal).onDidDismiss().then(result => {
-      console.log(result);
       if (result && !isSort) {
-        this;
+        this.filter(result.data);
       } else if (result && isSort) {
         this.sort(result.data.sort);
       } else {
@@ -117,5 +128,45 @@ export class SearchPage implements OnInit {
     DateB = new Date(b.departure_time) as any;
     const diffInMilSecB = Math.abs(DateA - DateB) / 1000;
     return diffInMilSecB - diffInMilSecA;
+  }
+
+  filter(data) {
+    let filterFlight: Flight[];
+    this.flights = this.flightsCopy;
+    this.priceFilter = data.price;
+    if (data.price.min && data.price.max) {
+      filterFlight = this.funtionFilter(
+        fare => fare.price > data.price.min && fare.price < data.price.max
+      );
+    } else if (!!data.price.max && !data.price.min) {
+      filterFlight = this.funtionFilter(fare => {
+        return fare.price < data.price.max;
+      });
+    } else if (!!data.price.min && !data.price.max) {
+      filterFlight = this.funtionFilter(fare => fare.price > data.price.min);
+    } else {
+      filterFlight = this.flights;
+    }
+
+    if (data.travelClass) {
+      filterFlight = this.funtionFilter(fare =>
+        data.travelClass.some(
+          travel => travel.type.toLowerCase() === fare.description.toLowerCase()
+        )
+      );
+    }
+    this.flights = filterFlight.filter(
+      flight => !!flight.fares && flight.fares.length > 0
+    );
+  }
+
+  funtionFilter(filterFares: (fare: Fare) => boolean): Flight[] {
+    return this.flights.map((flight: Flight) => ({
+      ...flight,
+      fares:
+        !!flight.fares && flight.fares.length > 0
+          ? flight.fares.filter(filterFares)
+          : null
+    }));
   }
 }

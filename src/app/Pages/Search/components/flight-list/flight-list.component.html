@@ -44,8 +44,13 @@
       class="fare-card"
       *ngFor="let fare of fares"
     >
-      <label for="price" class="fare-price">{{ fare.price }}</label>
-      <label for="price-desccription">{{ fare.description }}</label>
+      <ion-badge
+        *ngIf="fare.description === updatedFlight.best_fare.description"
+        class="best-fare-badge"
+        >Best</ion-badge
+      >
+      <label for="price" class="fare-price">{{ fare.price }} </label>
+      <label for="price-description">{{ fare.description }} </label>
     </ion-card>
   </div>
 </div>

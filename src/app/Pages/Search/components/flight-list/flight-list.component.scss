@@ -87,6 +87,16 @@
     &:last-of-type {
       margin-right: 0px;
     }
+    &.best-fare {
+      position: relative;
+      --background: var(--ion-color-primary-tint);
+      .best-fare-badge {
+        position: absolute;
+        top: 0px;
+        right: 4px;
+        --background: var(--trav-btn-primary-color);
+      }
+    }
     label {
       display: block;
       white-space: nowrap;

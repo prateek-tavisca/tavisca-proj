@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-buttons slot="start">
+    <ion-buttons slot="start" class="back">
       <ion-button type="button" (click)="goBack()">
         <ion-icon src="/assets/icon/arrow.svg" slot="icon-only"></ion-icon>
       </ion-button>
@@ -17,8 +17,7 @@
         </div>
         <label for=""
           >{{ homeData.departDate | date: "MMM dd" }} -
-          {{ homeData.returnDate | date: "MMM dd" }} |
-          {{ homeData.travelers }}</label
+          {{ homeData.returnDate | date: "MMM dd" }} | {{ travelers }}</label
         >
       </div>
     </ion-title>

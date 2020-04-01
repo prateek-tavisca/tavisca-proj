@@ -1,4 +1,4 @@
-import { NG_VALUE_ACCESSOR } from "@angular/forms";
+import { NG_VALUE_ACCESSOR, ControlValueAccessor } from "@angular/forms";
 import {
   Component,
   OnInit,
@@ -28,7 +28,7 @@ import {
     }
   ]
 })
-export class InputComponent implements OnInit {
+export class InputComponent implements OnInit, ControlValueAccessor {
   @ViewChild("inputLable", { static: true }) inputLabel: ElementRef;
   @Input() label: string;
   @Input() type: inputType = "text";
@@ -77,9 +77,7 @@ export class InputComponent implements OnInit {
 
   constructor(private renderer: Renderer2) {}
 
-  ngOnInit() {
-    console.log(this.inputLabel);
-  }
+  ngOnInit() {}
   onInput(event) {
     // event.preventDefault();
     this.onChangeFn(event);
@@ -91,12 +89,6 @@ export class InputComponent implements OnInit {
   }
   onChangeFn(event) {
     this.writeValue(event.target.value);
-  }
-
-  ngAfterContentInit(): void {
-    //Called after ngOnInit when the component's or directive's content has been initialized.
-    //Add 'implements AfterContentInit' to the class.
-    console.log(this.label);
   }
 }
 

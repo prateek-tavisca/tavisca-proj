@@ -71,7 +71,7 @@ export class FlightsComponent implements OnInit {
       departure: this.departVal.city_code,
       destination: this.destVal.city_code,
       departDate: this.departDateVal,
-      returenDate: this.returnDateVal,
+      returnDate: this.returnDateVal,
       travelers: this.travelerData,
       travelClass: this.flightForm.controls.travelClass.value
     };

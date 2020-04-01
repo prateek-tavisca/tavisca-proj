@@ -1,4 +1,4 @@
-import { NG_VALUE_ACCESSOR } from "@angular/forms";
+import { NG_VALUE_ACCESSOR, ControlValueAccessor } from "@angular/forms";
 import {
   Component,
   ContentChildren,
@@ -27,7 +27,8 @@ import { TabButtonComponent } from "../tab-button/tab-button.component";
     "[class.tab-bar-fixed]": "isFixedTab"
   }
 })
-export class TabGroupComponent implements AfterContentInit, AfterViewInit {
+export class TabGroupComponent
+  implements AfterContentInit, AfterViewInit, ControlValueAccessor {
   @ContentChildren(TabButtonComponent) tabButtons: QueryList<
     TabButtonComponent
   >;

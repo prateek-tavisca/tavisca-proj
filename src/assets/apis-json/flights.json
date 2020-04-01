@@ -1,5 +1,6 @@
 [
   {
+    "flight_id": "1376967853520",
     "departure_code": "PUN",
     "arrival_code": "BOM",
     "departure_time": "2014-01-24T22:15:00+10:00",
@@ -32,11 +33,12 @@
       }
     ],
     "best_fare": {
-      "price": 5000.54,
+      "price": 2285.54,
       "description": "Economy"
     }
   },
   {
+    "flight_id": "1376967853535",
     "departure_code": "PUN",
     "arrival_code": "BOM",
     "departure_time": "2014-01-25T09:30:00+08:00",
@@ -50,18 +52,19 @@
     "stops": "1",
     "fares": [
       {
-        "price": 2285.54,
+        "price": 3095.54,
         "description": "Economy",
         "route": "SYD-LHR",
         "seats_left": "45 seats"
       }
     ],
     "best_fare": {
-      "price": 2285.54,
+      "price": 3095.54,
       "description": "Economy"
     }
   },
   {
+    "flight_id": "1376967853545",
     "departure_code": "PUN",
     "arrival_code": "BOM",
     "departure_time": "2014-01-29T22:30:00+00:00",
@@ -86,6 +89,7 @@
     }
   },
   {
+    "flight_id": "1376967853555",
     "departure_code": "PUN",
     "arrival_code": "BOM",
     "departure_time": "2014-01-31T08:20:00+08:00",
@@ -105,7 +109,7 @@
       }
     ],
     "best_fare": {
-      "price": 4085.54,
+      "price": 2285.54,
       "description": "Economy"
     }
   }
