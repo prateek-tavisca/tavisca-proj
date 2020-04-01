@@ -25,6 +25,7 @@ export class FiltersComponent implements OnInit {
   @Input() min;
   @Input() max;
   priceFilter;
+  maxValue;
   updatedPrice;
   constructor(public modal: ModalController) {}
 
@@ -34,6 +35,7 @@ export class FiltersComponent implements OnInit {
     this.min = this.min ? this.min : this.priceFilter.min;
     this.max = this.max ? this.max : this.priceFilter.max;
     this.checks = [...booking_class];
+    this.maxValue = this.priceFilter.max;
   }
 
   goBack() {
@@ -50,6 +52,7 @@ export class FiltersComponent implements OnInit {
     this.min = price_filter.min;
     this.max = price_filter.max;
     this.priceFilter = { ...price_filter };
+    this.maxValue = this.priceFilter.max;
     this.checks = this.checks.map(check => ({
       ...check,
       isChecked: false
