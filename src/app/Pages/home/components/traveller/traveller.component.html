@@ -2,13 +2,13 @@
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-button type="button" (click)="goBack()">
-        <ion-icon src="/assets/icon/back-arrow.svg" slot="icon-only"></ion-icon>
+        <ion-icon src="/assets/icon/arrow.svg" slot="icon-only"></ion-icon>
       </ion-button>
     </ion-buttons>
     <ion-title>Travellers</ion-title>
   </ion-toolbar>
 </ion-header>
-<form [formGroup]="formData" (ngSubmit)="onSUbmit()">
+<form [formGroup]="formData">
   <div class="input-group">
     <label for="Adult">Adult <span class="age-range"> 12+ Years</span></label>
     <div class="counter-button">
@@ -66,7 +66,7 @@
   <ion-button
     (click)="onSubmit()"
     expand="block"
-    type="type"
+    type="button"
     class="btn btn-primary filter-submit"
   >
     Done

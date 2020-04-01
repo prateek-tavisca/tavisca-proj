@@ -165,7 +165,7 @@ export class FlightsComponent implements OnInit {
       const { adult, infant, child } = this.travelerData;
       let formString = "";
       if (adult) formString += `${adult} Adult`;
-      if (child) formString += `,${child} Child,`;
+      if (child) formString += `,${child} Child`;
       if (infant) formString += `,${child} Infant`;
       this.flightForm.controls.travelers.patchValue(formString);
     });
